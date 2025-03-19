@@ -4,7 +4,6 @@ import type { RouteRecordRaw } from 'vue-router/auto'
 import { createRouter, createWebHistory } from 'vue-router/auto'
 import { routes } from './additional-routes'
 import { setupGuards } from '@/plugins/1.router/guards'
-import { useScrollBehaviorOfRouter } from '@/helper/router'
 
 function recursiveLayouts(route: RouteRecordRaw): RouteRecordRaw {
   if (route.children) {
@@ -17,11 +16,8 @@ function recursiveLayouts(route: RouteRecordRaw): RouteRecordRaw {
   return setupLayouts([route])[0]
 }
 
-const { scrollBehavior } = useScrollBehaviorOfRouter()
-
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  scrollBehavior,
   extendRoutes: () => [
     ...[
       ...routes,
