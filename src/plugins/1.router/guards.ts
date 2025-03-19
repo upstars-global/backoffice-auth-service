@@ -1,33 +1,28 @@
-import type { RouteLocationNormalized, Router } from 'vue-router'
-
-const matchedUnFoundPagePath = '/:catchAll(.*)*'
-
-const existPath = (to: RouteLocationNormalized): boolean =>
-  to?.matched?.at(-1)?.path !== matchedUnFoundPagePath
+import type { Router } from 'vue-router'
+import { checkIsLoggedIn } from 'cardona-core-service/src/helpers/token-auth'
 
 export const setupGuards = (router: Router) => {
   router.beforeEach(async (to, _, next) => {
-    // const isLoginPage = to.name === 'Login'
-    //
-    // if (!checkIsLoggedIn()) {
-    //   setStorage(storageKeys.path, to.path)
-    //
-    //   return next({ name: 'Login' })
-    // }
-    //
-    // if (to.path === '/') {
-    //   console.log(isLoginPage)
-    //
-    //   return next({ name: 'Dashboard' })
-    // }
-    //
-    // if (!existPath(to))
-    //   return next({ name: 'Error404' })
+    const isLoginPage = to.name === 'Login'
+    const isLoggedIn = checkIsLoggedIn()
+
+    if (isLoggedIn && isLoginPage)
+
+      return next({ name: 'Dashboard' })
+
+    if (!isLoggedIn && !isLoginPage)
+      return next({ name: 'Login' })
+
+    if (to.matched.isEmpty)
+      return next({ name: 'Error404' })
 
     next()
   })
-
   router.afterEach(() => {
-    document.getElementById('loading-bg')?.setAttribute('data-state', 'off')
+    const appLoading = document.getElementById('loading-bg')
+    if (appLoading) {
+      appLoading.setAttribute('data-state', 'off')
+      appLoading.style.display = 'none'
+    }
   })
 }

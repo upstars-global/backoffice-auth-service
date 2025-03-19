@@ -4,8 +4,7 @@ const dashboard = [
     name: 'Dashboard',
     component: () => import('@/pages/dashboard/index.vue'),
     meta: {
-      title: 'dashboard',
-      breadcrumb: [],
+      layout: 'full',
     },
   },
 ]

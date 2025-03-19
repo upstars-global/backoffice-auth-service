@@ -4,12 +4,15 @@ const error = [
     name: 'Error404',
     component: () => import('cardona-core-service/src/pages/[...error].vue'),
     meta: {
-      layout: 'blank',
+      layout: 'full',
     },
   },
   {
     path: '/:catchAll(.*)*',
     component: () => import('cardona-core-service/src/pages/error/404.vue'),
+    meta: {
+      layout: 'full',
+    },
   },
 ]
 
