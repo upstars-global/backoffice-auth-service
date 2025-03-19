@@ -1,0 +1,21 @@
+.code-diff-view.single-code-view {
+  margin: 0;
+  box-shadow: none !important;
+  border: 1px solid rgba(var(--v-border-color), var(--v-border-opacity));
+  .file-diff-split {
+    table-layout: auto;
+    .blob-code+.blob-num {
+      border-left: none;
+    }
+  }
+  .empty-cell {
+    display: none;
+    width: 0;
+  }
+  .diff-table .blob-code-addition {
+    width: 100%;
+  }
+  .blob-code-marker:before {
+    content: none;
+  }
+}

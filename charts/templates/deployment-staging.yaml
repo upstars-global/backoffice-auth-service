@@ -1,0 +1,50 @@
+{{ if .Values.staging.enabled }}
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: staging-{{ .Release.Name }}
+spec:
+  replicas: 2
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  revisionHistoryLimit: 0
+  selector:
+    matchLabels:
+      app: staging-{{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        app: staging-{{ .Release.Name }}
+    spec:
+      containers:
+        - name: app
+          image: {{ .Values.image.name }}:{{ .Values.image.tag }}
+          ports:
+          - name: http
+            containerPort: 80
+            protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /
+              port: http
+          readinessProbe:
+            httpGet:
+              path: /
+              port: http
+          resources:
+            requests:
+              memory: 64Mi
+              cpu: 10m
+          env:
+            - name: SERVER_API_ADDR
+              value: {{ .Values.staging.serverApiAddr }}
+            - name: SERVER_PROXY_ADDR
+              value: {{ .Values.staging.serverProxyAddr }}
+            - name: SERVER_WS_URL
+              value: "{{ .Values.staging.serverWsUrl }}"
+            - name: SERVER_PORT_WS
+              value: "{{ .Values.staging.serverPortWs }}"
+{{- end }}

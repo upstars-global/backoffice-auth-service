@@ -1,0 +1,29 @@
+luckyrootService: luckyroot-staging-service
+
+image:
+  name: "<argocd placeholder>"
+  tag: "latest"
+
+env: ""
+
+ingress:
+  controller:
+    name: "nginx"
+
+serviceAccount:
+  name: backoffice
+
+desc:
+  project: "backoffice"
+  brand: "cardona"
+  env: production
+
+
+ingressHost: cardona
+serverApiAddr: luckyroot-production-service.luckyroot.svc.cluster.local
+serverProxyAddr: luckyroot-production-service.luckyroot.svc.cluster.local
+serverWsUrl: luckyroot-production-ws-svc.luckyroot.svc.cluster.local
+serverPortWs: 8080
+
+alaroPanelSercive: "alaro-panel-production"
+marbellaPanelSercive: "marbella-panel-production"

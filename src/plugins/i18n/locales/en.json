@@ -1,0 +1,2826 @@
+{
+  "locale": {
+    "localization": "Localization",
+    "default": {
+      "name": "Name",
+      "buttonName": "Button name",
+      "description": "Text",
+      "fakeDescription": "Fake text",
+      "metaTitle": "Title",
+      "fakeMetaTitle": "Fake Title",
+      "metaDescription": "Description",
+      "fakeMetaDescription": "Fake description",
+      "shortDescription": "Short description",
+      "content": "Description",
+      "gameListTitle": "Game list name",
+      "created": "Created",
+      "updated": "Updated"
+    },
+    "staticPage": {
+      "name": "Name",
+      "gameListTitle": "Game list name",
+      "description": "Text",
+      "fakeDescription": "Fake text",
+      "metaTitle": "Title",
+      "fakeMetaTitle": "Fake Title",
+      "buttonName": "Game list button name",
+      "fakeMetaDescription": "Fake description",
+      "metaDescription": "Description"
+    },
+    "levels": {
+      "description": "Content",
+      "rawGiftDescriptions": "Description"
+    },
+    "tournament": {
+      "name": "Name",
+      "content": "Content",
+      "shortContent": "Rules",
+      "metaTitle": "Title",
+      "metaDescription": "Description",
+      "prizeFundDescription": "Prize pool (description)"
+    },
+    "miles": {
+      "title": "Name",
+      "notEnoughToGiftMessage": "Next prize",
+      "collectedFirstSumMessage": "First prize",
+      "enoughToGiftMessage":  "Received prize",
+      "rules":  "Rules",
+      "steps": "Steps",
+      "prizeFundDescription":  "Prize pool"
+    },
+    "gifts": {
+      "title": "Name",
+      "offerTitle": "Offer name",
+      "shortDescription": "Short description",
+      "description": "Description"
+    }
+  },
+  "common": {
+    "idWithValue": "ID {value}",
+    "name": "Name",
+    "dateAndTime": "Date & time",
+    "depositId": "Deposit id",
+    "payoutId": "Payout id",
+    "transactionsId": "Transactions id",
+    "min": "min",
+    "notifications": "Notifications",
+    "action": "Action",
+    "approved": "Approved",
+    "period": "Period",
+    "emailPlaceholder": "name{'@'}example.com",
+    "additionalInfo": "Additional info",
+    "types": "Types",
+    "showTo": "Show to",
+    "showMore": "Show more",
+    "showLess": "Show less",
+    "edit": "Edit",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "remove": "Remove",
+    "makecopy": "Make a copy",
+    "save": "Save",
+    "gotIt": "Got It",
+    "cohortType": {
+      "auto": "Auto",
+      "manual": "Manual"
+    },
+    "supportService" : {
+      "_": "Support service",
+      "searchPlaceholder": "Search by ID, Digitain ID, Email and Login",
+      "history": "History",
+      "updateManagers": "Update managers",
+      "creator": "Creator",
+      "update": "Update",
+      "date": "Date",
+      "status": "Status",
+      "acceptTitle": "CSV",
+      "updated": "updated",
+      "failed": "failed",
+      "updatedRange": "updated: {current}/{total}",
+      "labelFailedRange": "failed:",
+      "account": "Account",
+      "verification": "Verification",
+      "payments": "Payments",
+      "result": "Result"
+    },
+    "adminSection" : {
+      "_": "Admin section",
+      "header": "Admin section",
+      "logoText": "Administrator"
+    },
+    "admin" : {
+      "_": "Admin",
+      "list" : "Admins",
+      "full": "Administrator",
+      "fullListCount": "Admins ({count})",
+      "fullList": "Admins",
+      "group": "Administrators group",
+      "add": "Add administrator",
+      "back": "Back"
+    },
+    "groups": {
+      "_": "Group",
+      "list": "Groups",
+      "listCount": "Groups ({count})",
+      "name": "Name",
+      "adminAdd": "Add an admin to the group",
+      "searchPlaceholder": "Search by Name and ID"
+    },
+    "player": {
+      "_": "Player",
+      "list": "Players",
+      "data": "Player data",
+      "personalInfo": "Personal info",
+      "card": "Player card",
+      "id": "Player ID"
+    },
+    "filter": {
+      "_": "Filter",
+      "list": "Filters",
+      "filtrate": "Filter",
+      "appliedFilters": "Applied filters"
+    },
+    "project": {
+      "_": "Project",
+      "list": "Projects",
+      "listCount": "Projects ({count})",
+      "name": "Name",
+      "publicName": "Project public name",
+      "searchPlaceholder": "Search by Name, ID and Slug"
+    },
+    "products": {
+      "_": "Products",
+      "list": "Products",
+      "listCount": "Products ({count})"
+    },
+    "banners": {
+      "_": "Banners",
+      "list": "Banners",
+      "name": "Name",
+      "publicName": "Public banner name",
+      "buttonUrl": "Banner URL",
+      "url": "URL",
+      "types": "Types",
+      "buttonName": "Button name",
+      "slug": "Slug",
+      "empty": "Empty",
+      "variableTitle": "Variable setting",
+      "content": "Description",
+      "imagePath": "path to image",
+      "searchPlaceholder": "Search by Name, ID and Slug",
+      "showTo": "Show to"
+    },
+    "editor": {
+      "addedVariables": "Added variables"
+    },
+    "phone": {
+      "_": "Phone",
+      "list": "Phones",
+      "reg": "Primary phone",
+      "additional": "Additional phone"
+    },
+    "balance": {
+      "_": "Balance",
+      "list": "Balances"
+    },
+    "comment": {
+      "_": "Comment",
+      "list": "Comments"
+    },
+    "locale": {
+      "_": "Locale",
+      "additional": "Additional locale"
+    },
+    "category": {
+      "_": "Category",
+      "name": "Name",
+      "url": "Category URL",
+      "searchPlaceholder": "Search by Name, ID and Slug",
+      "shortDescription": "Short description"
+    },
+    "producers": {
+      "name": "Producer name",
+      "isNew": "New producer",
+      "url": "URL",
+      "currencies": {
+        "label": "Supported currencies",
+        "description": "All currencies available in the system are supported if no currencies are selected"
+      },
+      "searchPlaceholder": "Search by title, id and slug"
+    },
+    "staticPages": {
+      "_": "Static pages",
+      "name": "Name",
+      "url": "URL static page",
+      "buttonName": "Game list button name",
+      "isHiddenTable": "Hide",
+      "gameCount": "Number of games",
+      "isHidden": "Hide page",
+      "isHiddenDescription": "The page will exist on its own at the specified URL",
+      "searchPlaceholder": "Search by Name, ID and Slug"
+    },
+    "bonuses": {
+      "_": "Bonuses",
+      "status": "Status",
+      "name": "Bonus name",
+      "giftName": "Gift",
+      "type": "Type",
+      "sum": "Sum",
+      "wagering": "Wagering",
+      "accrueBonus": "Accrue bonus",
+      "cancelBonus": "Cancel bonus",
+      "bonusManual": "Bonus manual",
+      "bonusOffer": "Bonus offer",
+      "bonusOfferBonusDetails": "Bonus details",
+      "cancel": "Cancel",
+      "accrue": "Accrue",
+      "amountAtWagering": "Amount at the time of wagering",
+      "transferredToReal": "Transferred to Real",
+      "winLimit": "Win limit",
+      "valueInPercentage": "Value in percentage",
+      "initiator": "Initiator",
+      "transferToReal": "Transfer to real",
+      "offer": {
+        "transactionInfo": "Only transactions from the last 24 hours are displayed. Available transaction statuses: New, Confirmed, Waiting, Processing"
+      }
+    },
+    "cashbacks": {
+      "_": "Cashbacks",
+      "sum": "Sum",
+      "sumForActivation": "Sum for activation",
+      "accumulationPeriod": "Accumulation period",
+      "accrualPeriod": "Accrual period",
+      "depositSum": "Deposit sum",
+      "cashback": "Cashback",
+      "recurrent": "Recurrent",
+      "onetime": "Onetime",
+      "status": {
+        "collect": "Collect",
+        "finished": "Finished",
+        "paused": "Paused",
+        "reward": "Reward",
+        "draft": "Draft",
+        "scheduled": "Scheduled"
+      }
+    },
+    "gifts": {
+      "_": "Gifts",
+      "status": "Status",
+      "name": "Name",
+      "templateName": "Template name",
+      "type": "Type",
+      "accrue": "Accrue gift",
+      "initiator": "Initiator"
+    },
+    "giftSpins": {
+      "_": "giftSpins",
+      "name": "Name",
+      "vendorCode": "Vendor сode",
+      "rounds": "Rounds",
+      "rates": "Rates",
+      "meta": "Meta",
+      "showRatesEnabled": "Show rates",
+      "showRatesEnabledDescription": "Works only for SoftGamings",
+      "softGamingsRates": "Soft Gamings Rates",
+      "searchPlaceholder": "Search by name, id and vendor code"
+    },
+    "betting":{
+      "searchPlaceholder": "Search by ID and Bonus ID",
+      "id": "Coupon ID",
+      "new": "New",
+      "won": "Won",
+      "lost": "Lost",
+      "cashout": "Cash Out",
+      "cashback": "Cash Back",
+      "express_bonus": "Express Bonus",
+      "bore_draw_money_back": "Bore Draw Money Back",
+      "ultra_cache_back": "Ultra Cash Back",
+      "multy_bet_of_the_day": "Multy Bet Of The Day",
+      "status": "Status",
+      "type": "Type",
+      "bonusType": "Bonus type",
+      "eventType": "Event type"
+    },
+    "transactions": {
+      "_": "Transactions",
+      "updateBalance": "Update balance",
+      "method": "Method",
+      "accrue": "Accrue",
+      "writeOff": "Write off",
+      "increase": "Increase",
+      "decrease": "Decrease",
+      "isAddTransactions": {
+        "labelAccrue": "Charge with transaction",
+        "labelDecrease": "Decrease with transaction"
+      },
+      "gift": "Gift",
+      "cause": "Cause",
+      "amount": {
+        "labelIncrease": "Increase amount",
+        "labelDecrease": "Decrease amount",
+        "placeholder": "0.00"
+      },
+      "modal": {
+        "increase": {
+          "title": "Increase real balance"
+        },
+        "decrease": {
+          "title": "Decrease real balance"
+        }
+      },
+      "paymentMethod": "Payment method",
+      "userId": "User ID",
+      "transactionId": "Transaction ID",
+      "externalTransactionId": "External transaction ID",
+      "externalId": "External ID",
+      "currency": "Currency",
+      "id": "ID",
+      "payouts": "Payouts",
+      "deposits": "Deposits",
+      "currencies": "Currencies"
+    },
+    "provider": {
+      "_": "Provider"
+    },
+    "game": {
+      "name": "Game name",
+      "searchPlaceholder": "Search by Name, ID and Slug"
+    },
+    "producer": {
+      "_": "Producer",
+      "showTo": "Show to"
+    },
+    "users": {
+      "_": "Administrators",
+      "firstName": "o.karpenko",
+      "email": "name{'@'}example.com",
+      "password": "qWerty1234",
+      "searchPlaceholder": "Search by Login, ID and Email"
+    },
+    "statusHistory": "Status history",
+    "featureFlags": {
+      "_": "Feature flags",
+      "selectSegment": "Select a segment"
+    },
+    "cashbox": {
+      "_": "Cashbox"
+    },
+    "cohorts": {
+      "_": "Cohorts"
+    },
+    "statusAndIndicators": "Status & Initiator",
+    "dayOfWeek": {
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday",
+      "saturday":"Saturday",
+      "sunday": "Sunday"
+    },
+    "cohort": {
+      "additionalInfo": "Additional info",
+      "participateCondition": "Participate condition",
+      "participateConditionPlaceholder": "Click below to insert a var/function",
+      "usersList": "Users",
+      "usersListPlaceholder": "e.g. id_player1, id_player2",
+      "dailyLimit": "Daily limit",
+      "weeklyLimit": "Weekly limit",
+      "monthlyLimit": "Monthly limit",
+      "timeLock": "TimeLock",
+      "botDelay": "Bot delay",
+      "timeParameters": "Time parameters"
+    },
+    "male": "Male",
+    "female": "Female",
+    "payoutsRulesSettings": {
+      "hoursForPayoutVerification": "Hours for verification",
+      "rule": "Rule",
+      "tabTitleTestOptions": "Test options",
+      "comment": "Comment",
+      "checkResult": "Check result",
+      "save": "Save",
+      "cancel": "Cancel",
+      "actions": {
+        "skip": "Skip",
+        "set_warning": "Set warning",
+        "set_forbidden": "Set forbidden",
+        "disable": "Disable"
+      },
+      "settings": {
+        "_": "Settings",
+        "verificationRequired": {
+          "true":"Without verification",
+          "false":"Verification required"
+        },
+        "verificationRequiredStatic": {
+          "true":"Verification required",
+          "false":"Without verification"
+        },
+        "botDisabled": {
+          "true": "Disable bot",
+          "false": "Enable bot"
+        },
+        "botDisabledStatic": {
+          "true": "Bot enabled",
+          "false": "Bot disabled"
+        },
+        "timelockDisabled": {
+          "true": "Disable timelock",
+          "false": "Enable timelock"
+        },
+        "timelockDisabledStatic": {
+          "true": "Timelock enabled",
+          "false": "Timelock disabled"
+        },
+        "botDelayDisabled": {
+          "true": "Disable bot delay",
+          "false": "Enable bot delay"
+        },
+        "botDelayDisabledStatic": {
+          "true": "Bot delay enabled",
+          "false": "Bot delay disabled"
+        },
+        "reviewRequired": {
+          "true": "Without review",
+          "false": "Review required"
+        },
+        "reviewRequiredStatic": {
+          "true": "Review required",
+          "false": "Without review"
+        }
+      }
+    },
+    "payoutsRulesSettingsTest": {
+      "vipStatus": "vip status",
+      "status": "status",
+      "controls": "Controls"
+    },
+    "payoutBotSettings": {
+      "rule": "Rule",
+      "comment": "Comment",
+      "checkResult": "Check result",
+      "addRule": "Add rule",
+      "documentation": "Documentation",
+      "disableRuleNumbers": "Number rules"
+    },
+    "onlineStatus": {
+      "true": "Online",
+      "false": "Offline"
+    }
+  },
+  "title": {
+    "dashboard": "Dashboard",
+    "accessManagement": "Access management",
+    "conciergeService": "Concierge service",
+    "supportService": "Support service",
+    "noAccessTitle": "No access",
+    "noAccess": "No access to the page",
+    "logging": "Logging",
+    "logInfo": "Log info",
+    "main": "Main",
+    "mainInfo": "Main info",
+    "content": "Content",
+    "localization": "Localization",
+    "seo": "SEO",
+    "bonuses": "Bonuses",
+    "transactions": "Transactions",
+    "transactionsDeposits": "Deposits",
+    "transactionsPayouts": "Payouts",
+    "multiaccounts": "Multiaccounts",
+    "payouts": "Payouts",
+    "playersDetailed": "Players",
+    "payoutsList": "Payouts list",
+    "payoutsRules": "Payouts rules",
+    "payoutsRulesSettings": "Rules settings",
+    "tabTitleMultiaccounts": "Multiaccounts {count}",
+    "statistic": "Statistic",
+    "logs": "Logs",
+    "achievements": {
+      "_": "Achievements",
+      "list": "List of achievements",
+      "create": "Achievement creation",
+      "edit": "Achievement editing"
+    },
+    "actionsMiles": {
+      "list": "Miles",
+      "create": "Mile creation",
+      "edit": "Mile editing"
+    },
+    "selfExclusion": {
+      "_": "Self exclusion"
+    },
+    "levels": {
+      "list": "Levels",
+      "create": "Level creation",
+      "edit": "Level editing",
+      "sidebarTitle": "Level"
+    },
+    "vipManager": {
+      "list": "VIP managers",
+      "create": "VIP manager creation",
+      "edit": "VIP manager editing"
+    },
+    "gifts": {
+      "_": "Gifts",
+      "list": "Gifts",
+      "listOfGifts": "List of gifts",
+      "giftSpinsOffers": "Gift spins offers",
+      "edit": "Gift spins offers editing",
+      "create": "Gift spins offers creation",
+      "players": {
+        "sidebarTitle": "Gift"
+      },
+      "depositRules": "Deposit rules",
+      "creation": "Gift creation",
+      "update": "Gift editing"
+    },
+    "promoCodesCampaign": {
+      "list": "Coupons",
+      "create": "Coupons creation",
+      "edit": "Coupons editing"
+    },
+    "cashbacks": {
+      "list": "Cashbacks",
+      "create": "Cashback creation",
+      "edit": "Cashback editing"
+    },
+    "promoGifts": {
+      "list": "Promo gifts",
+      "create": "Promo gifts creation",
+      "edit": "Promo gifts editing"
+    },
+    "balanceHistory": "Balance history",
+    "bettingHistory": "Betting history",
+    "limits": {
+      "_": "Limits",
+      "sidebarTitle": "Limit",
+      "self-": {
+        "exclusion": {
+          "sidebarTitle": "Self exclusion"
+         }
+      }
+    },
+    "player": {
+      "list": "Players",
+      "card": "Player card"
+    },
+    "admin": {
+      "list": "Administrators",
+      "create": "Create administrator",
+      "edit": "Edit administrator"
+    },
+    "groups": {
+      "list": "Groups",
+      "create": "Group creation",
+      "edit": "Group editing"
+    },
+    "configuration": "Configuration",
+    "promo": "Promo",
+    "projects": {
+      "list": "Projects",
+      "create": "Project creation",
+      "edit": "Project editing",
+      "sidebarTitle": "Project"
+    },
+    "banners": {
+      "list": "Banners",
+      "create": "Banner creation",
+      "edit": "Banner editing"
+    },
+    "games": {
+      "list": "List of games",
+      "create": "Game creation",
+      "edit": "Game editing"
+    },
+    "game": {
+      "_": "Game",
+      "list": "Games",
+      "listOfGames": "List of games",
+      "categories": "Game categories",
+      "producers": "Producers",
+      "all": "All games",
+      "added": "Added games",
+      "create": "Game creation",
+      "edit": "Game editing"
+    },
+    "gamesCategories": {
+      "_": "Category",
+      "list": "Game categories",
+      "create": "Category creation",
+      "edit": "Category editing"
+    },
+    "gamesProducers": {
+      "_": "Producer",
+      "list": "Producers",
+      "create": "Producer creation",
+      "edit": "Producer editing"
+    },
+    "staticPages": {
+      "_": "Static pages",
+      "list": "Static pages",
+      "create": "Static page creation",
+      "edit": "Static page editing"
+    },
+    "adminSection": {
+      "_": "Admin section",
+      "header": "Admin section",
+      "logoText": "Administrator"
+    },
+    "usersAdminSection": {
+      "_": "All users",
+      "list": "All users",
+      "create": "Admin creation",
+      "edit": "Admin editing",
+      "sidebarTitle": "User"
+    },
+    "users": {
+      "_": "Admins",
+      "list": "Admins",
+      "create": "Admin creation",
+      "edit": "Admin editing",
+      "sidebarTitle": "Admin"
+    },
+    "treasury": {
+      "balances":{
+        "logs": {
+          "sidebarTitle": "Event",
+          "archive": {
+            "sidebarTitle": "Event"
+          }
+        },
+        "bonuses": {
+          "history": {
+            "sidebarTitle": "Bonus"
+          }
+        }
+      },
+      "betting": {
+        "history": {
+          "sidebarTitle": "Bet"
+        }
+      },
+      "transactions": {
+        "sidebarTitle": "Transaction",
+        "players": {
+          "sidebarTitle": "Transaction",
+          "deposit": {
+            "sidebarTitle": "Transaction"
+          },
+          "payout": {
+            "sidebarTitle": "Transaction"
+          }
+        }
+      }
+    },
+    "neocore": {
+      "users": {
+        "sidebarTitle": "Admin"
+      },
+      "groups": {
+        "sidebarTitle": "Group"
+      }
+    },
+    "featureFlags": {
+      "list": "Feature flags",
+      "create": "Feature creation",
+      "edit": "Feature editing"
+    },
+    "tags": {
+      "list": "Tags",
+      "create": "Tag creation",
+      "edit": "Tag editing"
+    },
+    "cohort": {
+      "list": "Cohorts",
+      "create": "Cohort creation",
+      "edit": "Cohort editing"
+    },
+    "testOptions": "Test options",
+    "payoutsRulesTestOptions": "Test options",
+    "payouts": {
+      "_": "Payouts",
+      "rules" : {
+        "settings": {
+          "sidebarTitle": "Rule"
+        }
+      }
+    },
+    "tournament": {
+      "tabs": {
+        "main": "Main",
+        "participants": "Participants",
+        "winners": "Winners",
+        "logs": "Logs"
+      },
+      "list": "Tournaments",
+      "create": "Tournament creation",
+      "card": "Tournament card",
+      "edit": "Tournament editing",
+      "start": "Start generation",
+      "stop": "Stop generation",
+      "schedule": {
+        "suffix": "Suffix",
+        "status": "Status",
+        "startsAt": "Starts",
+        "finishesAt": "Finishes"
+      },
+      "weekly": "Weekly",
+      "daily": "Daily",
+      "startsAfter": "Starts after",
+      "finishesAfter": "Finishes after",
+      "appearsAt": "Appears on site at",
+      "name": "Name",
+      "status": "Status",
+      "period": "Tournament Period",
+      "access": "Access",
+      "slug": "Slug",
+      "rounds": "Rounds",
+      "bets": "Bets",
+      "wins": "Wins",
+      "active": "Active",
+      "finished": "Finished",
+      "future": "Future",
+      "archived": "Archived"
+    },
+    "template": {
+      "list": "Templates",
+      "create": "Template creation",
+      "edit": "Template editing",
+      "card": "Template card",
+      "settings": "Settings",
+      "generatedTournaments": "Generated tournaments",
+      "manualTournaments": "Manual tournaments",
+      "generate": "Generate",
+      "noGenerations": "There are no generations",
+      "generationSettings": "Generation settings",
+      "createTournament": "Create tournament",
+      "tournamentPeriod": "Tournament period",
+      "content": "Content"
+    },
+    "actionsCurrencies": {
+      "list": "Currencies",
+      "create": "Currency creation",
+      "edit": "Currency editing",
+      "card": "Currency card",
+      "activate": "Activate"
+    },
+    "actions": {
+      "currencies": {
+        "list": "Currencies",
+        "create": "Currency creation",
+        "update": "Currency editing",
+        "card": "Currency card",
+        "activate": "Activate"
+      }
+    }
+  },
+  "component": {
+    "periods": {
+      "all": "All period",
+      "year": "Year",
+      "quater": "This quarter",
+      "month": "Month",
+      "week": "This week",
+      "today": "Today"
+    },
+    "select": {
+      "selectedAllBanners": "You have selected all banners",
+      "selectedAllProjects": "You selected all projects",
+      "selectedAllGroups": "You selected all groups"
+    },
+    "countriesSelect": {
+      "banInCountries": "Ban in countries",
+      "allowInCountries": "Allow in countries",
+      "bannedCountries": "Banned countries",
+      "allowedCountries": "Allowed countries",
+      "allowAll": "Allow all"
+    },
+    "gamesCard": {
+      "description": "You can add games to the entity and manage their display order",
+      "moveToTop": "Move to Top",
+      "moveToBottom": "Move to Bottom",
+      "noGamesAdded": "No games added for this entity",
+      "addInBulk": "Add in bulk",
+      "lockPosition": "Lock position",
+      "unlockPosition": "Unlock position",
+      "lock": "Lock",
+      "unlock": "Unlock"
+    }
+  },
+  "page": {
+    "achievements": {
+      "visibility": "Visibility",
+      "achievementID": "Achievement ID",
+      "slug": "Slug",
+      "type": "Type",
+      "validPeriod": "Valid period",
+      "levelTitle": "Level Title",
+      "levelDescription": "Level Description",
+      "levels": "Levels",
+      "searchByType": "Search by Type",
+      "isHidden": "Hidden",
+      "isHiddenForce": "Hidden completely",
+      "depositLimits": "Min deposit",
+      "betLimits": "Min bet",
+      "period": "Valid period",
+      "visiblePeriod": "Display period",
+      "allowedUserStatusesDescription": "If no VIP status is selected, then all statuses are supported",
+      "segmentsDescription": "If no segments are selected, than achievement progress will not be tracked",
+      "title": "Title",
+      "description": "Description",
+      "descriptionPlaceholder": "Short description",
+      "image": "Image",
+      "displayPeriodIsGreater": "\"Display period\" can`t be greater than \"Valid period\" date",
+      "displayPeriodIsLess": "\"Display period\" can`t be less than \"Valid period date\"",
+      "gameListAllowed": "List type",
+      "isAllowedAllGames": "Are all games available?",
+      "isAllowedAllGames_true": "Games from the list are considered",
+      "isAllowedAllGames_false": "Games from the list are excluded",
+      "levelsTab": {
+        "_": "Level info",
+        "addLevel": "Add level",
+        "level": "Level",
+        "image": "Image",
+        "title": "Title",
+        "extraTitle": "Additional title",
+        "description": "Description",
+        "extraDescription": "Additional description",
+        "buttonDescription": "Button name",
+        "buttonLinkDescription": "Button URL",
+        "buttonLinkDescriptionPlaceholder": "URL",
+        "eventName": "Google Event name",
+        "gifts": "Gifts",
+        "requiredDeposits": "Required deposits",
+        "slotsCount": "Сount of slots",
+        "unit": "Measurement unit",
+        "unitPlaceholder": "Measurement unit",
+        "estimateTime": "Completion time",
+        "days": "Number of days",
+        "modalRemoveTitle": "Remove level",
+        "modalRemoveDescription": "Are you sure you want to remove the level?"
+      },
+      "assignInBulk": "Assign in bulk",
+      "assignInBulkModal": {
+        "title": "Assign achievement in bulk",
+        "label": "Player IDs list",
+        "placeholder": "632047f4cdd6a0c",
+        "description": "Each player ID should be entered on a new line",
+        "error": {
+          "title": "No players found for { quantity } player IDs",
+          "description": "Correct the following ID to assign achievement:"
+        }
+      }
+    },
+    "noAccess": {
+      "noAccessToPartition": "No access to partition",
+      "textPage": "Please contact the main administrator for access."
+    },
+    "login": {
+      "welcomeToAdminPanel": "Welcome to admin panel",
+      "inCaseForgotPassword": "If you forgot your password, contact the administrator"
+    },
+    "userUpdate": {
+      "mainInfo": "Main info",
+      "generalInfo": "General info",
+      "groupNames": "Group names",
+      "projectNames": "Project names",
+      "accessProducts": "Product access",
+      "accessAllUsers": "Access to all users",
+      "productsNames": "Destination of products"
+    },
+    "groupList": {
+      "groupID": "ID",
+      "createAnotherOne": "Create another one",
+      "areYouSureModal": {
+        "title": "Remove Group",
+        "text": "Are you sure you want to remove the group?"
+      },
+      "groupHasUsers": {
+        "title": "",
+        "text": ""
+      }
+    },
+    "groupCreate": {
+      "createOneMore": "Create one more"
+    },
+    "groupUpdate": {
+      "groupHasUsers": {
+        "title": "Unable to delete group",
+        "text": "Remove users from the group and try again"
+      }
+    },
+    "groupFragment": {
+      "actions": "Actions",
+      "groupSettings": "Group settings",
+      "sectionsAccess": "Access to sections",
+      "accessControl": "Access control",
+      "configurations": "Configurations",
+      "promo": "Promo",
+      "other": "Other",
+      "gifts": "Gifts",
+      "playersAccess": "Access to players",
+      "paymentWhitelist": "Payment whitelist",
+      "Payment whitelist": "Payment whitelist",
+      "playersNotes": "Notes to players",
+      "winBack": "Win Back",
+      "withdrawAmount": "Amount to withdraw",
+      "mainComment": "Main comment",
+      "playerPortrait": "Player portrait",
+      "addAdminToGroup": "Add an admin to a group",
+      "playerCommunication": "Player Communication",
+      "games": "Games",
+      "gamesCategories": "Games categories",
+      "listGames": "List of games",
+      "gamesProducers": "Producers",
+      "staticPages": "Static pages",
+      "settings": "Settings",
+      "cashbox": "Cashbox",
+      "achievements": "Achievements",
+      "payouts": "Payouts"
+    },
+    "gifts": {
+      "activity": "Activity",
+      "templateName": "Template name",
+      "type": "Type",
+      "timeForActivation": "Time for activation",
+      "depositRules": "Deposit rules",
+      "noDepositFs": "No deposit fs",
+      "autoActivation": "Auto-activation",
+      "types": {
+        "Deposit bonus": "Deposit bonus",
+        "NonDeposit": "Non deposit",
+        "Group": "Group",
+        "Universal gaming": "Universal gaming",
+        "Cashback": "Cashback",
+        "XP": "XP",
+        "Cash": "Cash",
+        "Custom Gift": "Custom gift",
+        "Manual": "Manual",
+        "Action currency": "Action currency",
+        "Betting": "Betting"
+      },
+      "name": "Name",
+      "offerTitle": "Offer name",
+      "slug": "Slug",
+      "shortDescription": "Short description",
+      "description": "Description",
+      "sums": "Sum",
+      "sumLimits": "Max sum",
+      "maxWin": "Max win",
+      "maxSumForTransfer": "Max sum for transfer",
+      "active": "Active",
+      "period": "Time for playing FS",
+      "periodInHours": "Activated bonus duration",
+      "plannedReceiveDateAt": "Delivery date",
+      "plannedReceiveDateAtDescription": "If no date is selected, the gift delivers after creation",
+      "depositNumber": "Deposit number",
+      "multiAccountBlock": "Blocked by anti-multiaccounting",
+      "needsValidEmail": "Email verification",
+      "needsValidPhone": "Phone verification",
+      "paymentMethods": "System methods",
+      "paymentMethodsDescription": "Each method must be separated by a comma",
+      "currency": "Currency",
+      "sum": "Sum",
+      "wager": "Wager",
+      "manualBonus": "Manual bonus",
+      "gifts": "Gifts",
+      "bonusType": "Bonus type",
+      "bonusTypes": {
+        "wagering": "Wagering",
+        "free_bet": "Free bet",
+        "real_wagering": "Real wagering",
+        "express": "Express",
+        "express & single": "Express & Single",
+        "single": "Single"
+      },
+      "expired": "Time for activation",
+      "alaroTemplateId": "Alaro template ID",
+      "gameId": "Game ID",
+      "nonDeposit": "No deposit FS",
+      "alaroPromoType": "Bonus type",
+      "winLimitsAsPercent": "Show in percentage",
+      "amount": "Amount of experience",
+      "minWageringOdd": "Min coefficient",
+      "allowClientCancellation": "User can cancel bonus",
+      "oneTimeBet": "User can place only one bet a time",
+      "minNumbOfSelections": "Min events in express",
+      "userBonusTypeId": "Bonus type",
+      "allowedBetTypeId": "Bets eligible for bonus",
+      "userBonusExpressOddTypeId": "Bonus usage",
+      "sendInBulk": "Send in bulk",
+      "distributionModal":{
+        "title": "Send gift in bulk",
+        "mainTabTitle": "Send gift",
+        "sentGifts": "sent: {current}/{total}"
+      }
+    },
+    "promoCodesCampaign": {
+      "searchPlaceholder": "Search by Campaign Name, Refcode and Coupon",
+      "activity": "Activity",
+      "name": "Campaign Name",
+      "total": "Total coupons",
+      "used": "Used coupons",
+      "refcode": "Refcode",
+      "period": "Valid period",
+      "created": "Created",
+      "publicCode": "Public promo\ncode",
+      "checkPartnerCode": "Check partner\npromo code",
+      "isActive": "Active",
+      "description": "Description",
+      "gift": "Gift",
+      "couponsCount": "Coupons",
+      "isPublicCode": "Public promo code",
+      "isShouldCheckPartnerCode": "Check partner promo code",
+      "activationLimit": "Players"
+    },
+    "project": {
+      "majorApiVer": "Major API version",
+      "websiteUrl": "Website URL",
+      "clientId": "Client ID",
+      "privateKey": "Private key",
+      "callbackUrl": "Callback URL",
+      "techUrl": "Tech. URL",
+      "wlIdentifier": "WL identifier",
+      "addAdmin": "Add an admin to the project",
+      "configName": "Config name",
+      "publicKey": "Public key",
+      "vcoinsUrl": "Vcoins URL",
+      "icon": "Icon",
+      "removeModal": {
+        "title": "Remove project",
+        "description": "Are you sure you want to remove the project?"
+      },
+      "sidebarPart": {
+        "general": "General settings",
+        "alaro": "Alaro",
+        "valencia": "Valencia",
+        "marbella": "Marbella",
+        "administrators": "Project admins"
+      }
+    },
+    "banners": {
+      "startDate": "Start date",
+      "completionDate": "Completion date",
+      "googleEventCategory": "Google event category",
+      "backgroundColor": "Background color",
+      "backgroundColorGrad": "Gradient options",
+      "useGradient": "Use gradient",
+      "listRefcodes": "List of refcodes",
+      "listRefcodesDescription": "Separator - comma",
+      "range": "Range",
+      "slider": "Slider",
+      "promo": "Promo",
+      "bannerType": "Banner type",
+      "segmentsDescription": "If no segments are selected, then access to the banners is not limited",
+      "segmentsSelectPlaceholder": "Search by Segments",
+      "keyStrategy": {
+        "LEVEL_IN_RANGE": "Level in range",
+        "DAYS_PASSED_SINCE_LAST_DEPOSIT" : "Days passed since deposit",
+        "DEPOSIT_COUNT_IN_RANGE": "Number of deposits in the range",
+        "DEPOSIT_SUM_GTE": "GTE deposit amount",
+        "EXPRESSION": "Expression",
+        "SHOW_ALWAYS": "Everyone",
+        "WL_RELATION": "For players from the project",
+        "GUEST": "Guests only",
+        "FIRST_DEPOSIT": "First deposit",
+        "AUTHORIZED": "Only registered",
+        "REFCODE": "According to the given refcodes",
+        "APPROPRIATE_STATUS_STRATEGY": "Vip status"
+      },
+      "strategyParam": {
+        "DEPOSIT_COUNT_IN_RANGE": {
+          "label": "Range of deposits",
+          "placeholder": "X-Y"
+        },
+        "LEVEL_IN_RANGE": {
+          "label": "Level range",
+          "placeholder": "X-Y"
+        },
+        "REFCODE": {
+          "label": "List of refcodes",
+          "placeholder": "ref1, ref2, ref3"
+        },
+        "APPROPRIATE_STATUS_STRATEGY": {
+          "label": "Vip status",
+          "placeholder": "PLATINUM, GOLD"
+        }
+      }
+    },
+    "conciergePlayer": {
+      "realAccount": "Real account",
+      "bonusAccount": "Bonus account",
+      "newPayouts": "New payouts",
+      "winBack": "Win Back",
+      "casinoBalance": "Balance Casino",
+      "roleplaying": "Roleplaying",
+      "sportBalance": "Balance Sport",
+      "freebetSport": "Freebet Sport"
+    },
+    "supportService": {
+      "info": "If the option is turned on, a bonus activates immediately after crediting to the player.",
+      "descriptionAutoActivation": "Auto-activation",
+      "title": "Title",
+      "description": "Description",
+      "walletId": "Wallet ID",
+      "limitDaily": "In a day",
+      "limitWeekly": "In a week",
+      "limitMonthly": "In a month",
+      "playerAccounts": "Player accounts",
+      "realAccount": "Real balance",
+      "casinoBonusBalance": "Casino bonus balance",
+      "sportBonusBalance": "Sports bonus balance",
+      "payout": "Payout",
+      "payouts": "Payouts",
+      "portraits": "Portraits",
+      "winBack": "Winback",
+      "winBackEdit": "Edit winback",
+      "cashback": "cashback",
+      "wager": "Wager",
+      "wagered": "Wagered",
+      "freebetSport": "Freebet sport",
+      "playerSettings": "Player settings",
+      "digitainID": "Digitain ID",
+      "partnercode": "Partnercode",
+      "registrationDate": "Registration date",
+      "notMatchedName": "Holder name doesn't match player name",
+      "lastLogin": "Last login",
+      "ip": "IP",
+      "lastIp": "Last IP",
+      "lastCountry": "Last country",
+      "manager": "Manager",
+      "managerModal": "Assign a manager",
+      "noManager": "No manager",
+      "testAccount": "Test account",
+      "accountBlocking": "Account blocking",
+      "suspend": "Suspend",
+      "blocking": "Blocking",
+      "emailVerification": "Email verification",
+      "phoneVerification": "Phone verification",
+      "automaticPayouts": "Automatic payouts",
+      "KYCVerification": "KYC verification",
+      "paymentMethod": "Payment method",
+      "paymentSystem": "Payment system",
+      "paymentSystems": "Payment systems",
+      "payoutsOnReview": "Payouts on review",
+      "modalTitlePaymentAccessList": "Payment access list",
+      "none": "none",
+      "savedCards": "Saved cards",
+      "paymentAccessList": "Payment access list",
+      "cardMask": "Card mask",
+      "payoutLimits": "Payout limits",
+      "payoutLimitsTitleModal": "Payout limits",
+      "login": "Login",
+      "nickname": "Nickname",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "middleName": "Middle name",
+      "gender": "Gender",
+      "dateOfBirth": "Date of birth",
+      "postalCode": "Postal code",
+      "address": "Full address",
+      "avgDep": "AVG Dep",
+      "totalBet": "Total Bet",
+      "totalIN": "Total IN",
+      "totalOUT": "Total OUT",
+      "totalINOUT": "Total IN-OUT",
+      "vipStatus": "VIP Status",
+      "vipStatuses": "VIP Statuses",
+      "changeStatusModalTitle": "Change player vip status",
+      "expiredAtLabel" : "Date & time",
+      "changeExtendGiftsModalTitle": "Extend the gift",
+      "addGiftModal": "Accrue a gift",
+      "requisites": "Requisites",
+      "cancelReason": "Cancel reason",
+      "cancelErrorReason": "Cancel/error reason",
+      "dateTime": "Date & time",
+      "templateName": "Template name",
+      "needsValidEmail": "Needs valid email",
+      "needsValidPhone": "Needs valid phone",
+      "depositLimits": "Deposit limits",
+      "accrualAmount": "Accrual amount",
+      "bonusMultiplier": "Bonus multiplier",
+      "cancelBonusDescription": "Are you sure you want to cancel the bonus?",
+      "keepBonus": "Keep bonus",
+      "pinnedMessages": "Pinned messages",
+      "pinnedMessagesWithCount": "Pinned messages ({count})",
+      "walletNumber": "Wallet number",
+      "expiryDate": "Expires",
+      "holderName": "Holder name",
+      "firstDep": "Firstdep",
+      "lastDep": "Lastdep",
+      "updated": "Updated",
+      "betAmount": "Bet amount",
+      "winAmount": "Win amount",
+      "betDate": "Bet date",
+      "bonus": "Bonus",
+      "bonusId": "Bonus ID",
+      "cashout": "Cashout",
+      "eventType": "Event type",
+      "currentWin": "Current win",
+      "bonusType": "Bonus Type",
+      "bonusWalletBet": "Bonus wallet bet",
+      "transferredToReal": "Transferred to real",
+      "sentToReview": "Sent to review",
+      "transactionId": "Transaction ID",
+      "bankStatus": "Bank status",
+      "edited": "Edited",
+      "balancePeriodModal": {
+        "title": "Custom period",
+        "apply": "Apply"
+      },
+      "notifications": {
+        "sendNotification": "Send notification",
+        "history": "History",
+        "lifetime": "Lifetime",
+        "addButton": "Add button",
+        "buttonName": "Button name",
+        "buttonUrl": "Button URL",
+        "deletedBy": "Deleted by {name}",
+        "email": "Promo mails",
+        "sms": "Promo SMS",
+        "creator": "Creator",
+        "externalTransactionalNotificationMail": "Transactions mails",
+        "externalTransactionalNotificationSms": "Transactions SMS",
+        "reachInbox": "ReachInbox",
+        "robovoiceCalls": "Robovoice calls"
+      },
+      "balanceHistory": {
+        "recentHistory": "Recent",
+        "archive": "Archive",
+        "showArchive": "Show archive",
+        "closeArchive": "Close archive",
+        "realBalanceSum": "Real balance sum",
+        "casinoBonusBalanceSum": "Casino bonus balance sum",
+        "bettingBonusBalanceSum": "Betting bonus balance sum",
+        "bettingFreebetBalanceSum": "Betting freebet balance sum",
+        "casinoBonusBalance": "Casino bonus balance",
+        "casinoWagering": "Casino wagering",
+        "bettingBonusBalance": "Betting bonus balance",
+        "bettingWagering": "Betting wagering",
+        "bettingFreebet": "Betting freebet"
+      },
+      "multiaccounts": {
+        "lock": "Lock",
+        "unlock": "Unlock",
+        "multiacc": "Multiacc: {count}",
+        "unlocked": "Unlocked: {count}"
+      },
+      "paymentSystemTexts": {
+        "addPaymentSystem": "Add payment system",
+        "paymentSystem": "Payment system",
+        "depositDirection": "Deposit direction",
+        "withdrawalDirection": "Withdrawal direction",
+        "validPeriod": "Valid period"
+      },
+      "limits": {
+        "parentId": "ParentId",
+        "subType": {
+          "_": "Subtype",
+          "daily": "Daily",
+          "weekly": "Weekly",
+          "monthly": "Monthly"
+        },
+        "limitCreated": {
+          "_": "Сreator",
+          "admin": "Admin",
+          "player": "Player",
+          "system": "System"
+        },
+        "used": "Used",
+        "setupDate": "Setup date",
+        "updateDate": "Update date",
+        "reloadDate": "Reload date",
+        "reloadDateFilter": "Reload period",
+        "tillDate": "Till date",
+        "tillDateFilter": "Till period",
+        "creator": "Creator",
+        "initiator": "Initiator",
+        "createLimit": "Create limit",
+        "editLimits": "Edit {subtype} limit",
+        "cancelLimit": "Cancel limit",
+        "keepLimit": "Keep limit",
+        "limit": "Limit",
+        "limitSum": "Limit sum",
+        "waitingPeriod": "Include 24-hour waiting period",
+        "successToastDescription": "Please wait 24 hours while changes is being applied.",
+        "info": "Limit changes take effect after 24 hours.",
+        "cancelLimitText": "Are you sure you want to cancel this limit?",
+        "nextLimit": "Next limit",
+        "status": {
+          "active": "Active",
+          "disabled": "Disabled",
+          "waiting_disable": "Waiting disable",
+          "prolongation_disabled": "Prolongation disabled",
+          "prolongation_updated": "Prolongation updated",
+          "waiting_changes": "Waiting changes",
+          "waiting_activation": "Waiting activation"
+        },
+        "type": {
+          "deposit": "Deposit",
+          "loss": "Loss",
+          "self-exclusion": "Self Exclusion"
+        }
+      },
+      "selfExclusion": {
+        "type": "Type",
+        "setupDate": "Setup date",
+        "tillDate": "Till date",
+        "period": "Period",
+        "endDate": "Letter expired at",
+        "status": "Status",
+        "setupBy": "Setup by",
+        "disabledBy": "Disabled by",
+        "reason": "Reason",
+        "player": "Player",
+        "admin": "Admin",
+        "system": "System",
+        "self-exclusion": "Self exclusion",
+        "cancelLimit": "Cancel limit",
+        "statuses": {
+          "disabled":  "Disabled",
+          "waiting_disable": "Waiting disable",
+          "waiting_to_confirm":  "Waiting to confirm",
+          "cooling_off_active": "Cooling off active",
+          "self_exclusion_waiting_to_confirm":  "Self exclusion waiting to confirm",
+          "self_exclusion_active": "Self exclusion active"
+        },
+        "badges": {
+          "waiting_to_confirm": "Cooling off awaiting",
+          "cooling_off_active": "Cooling off",
+          "self_exclusion_waiting_to_confirm": "Self exclusion awaiting",
+          "self_exclusion_active": "Self excluded",
+          "waiting_disable": "Self excluded"
+        },
+        "types": {
+          "cooling_off_active": "Cooling off active",
+          "сooling-off": "Cooling off waiting to сonfirm",
+          "self-exclusion": "Self exclusion",
+          "self-exclusion-waiting-to-confirm": "Self exclusion waiting to confirm"
+        },
+        "periods": {
+          "day": "{ value } day",
+          "days": "{ value } days",
+          "month": "{ value } month",
+          "months": "{ value } months",
+          "year": "Year",
+          "forever": "Forever"
+        },
+        "expirationTypeLabel": "Waiting period",
+        "options": {
+          "full": "None",
+          "day": "24 hours",
+          "week": "7 days"
+        },
+        "modal": {
+          "cancelSelfExclusionTitle": "Cancel self exclusion",
+          "cancelSelfExclusionDescription": "Are you sure you want to cancel self exclusion? Changes will be applied after waiting period.",
+          "cancelCoolingOffActiveTitle": "Cooling-off",
+          "cancelCoolingOffActiveDescription": "Are you sure you want to cancel cooling off?",
+          "createTitle": "Create self exclusion"
+        },
+        "actions": {
+          "keepLimit": "Keep limit",
+          "cancelLimit": "Cancel limit"
+        },
+        "reasons": {
+          "GAMBLING_ADDICTION": "I have a gambling addiction",
+          "FEAR_GAMBLING_ADDICTION": "Fear of developing gambling addiction",
+          "GAMBLING_BREAK": "Want to have a break from gambling",
+          "PERSONAL_REASONS": "Personal reasons",
+          "NO_WINNINGS": "No winnings",
+          "MISTAKE_ACCOUNT": "Account was created by mistake",
+          "VERIFICATION_PROBLEMS": "Problems with verification",
+          "DEPOSIT_ISSUES": "Deposit issues",
+          "WITHDRAWAL_ISSUES": "Withdrawal issues",
+          "BONUS_ISSUES": "Bonus issues",
+          "LAGS_ON_SITE": "Frequent glitches or lags on site",
+          "TERMS_AND_CONDITIONS_DISAGREE": "Don’t agree with general terms and conditions",
+          "NON_COMPLIANCE_WITH_LEGAL_REGULATORY_REQUIREMENTS": "Non-compliance with legal / regulatory requirements",
+          "UNSATISFACTORY_SUPPORT_SERVICE": "Unsatisfactory support / service",
+          "INCONVENIENT_USER_INTERFACE": "User interface",
+          "SWITCHING_TO_ANOTHER_CASINO": "Switching to another casino"
+        }
+      }
+    },
+    "logging": {
+      "logId": "Log ID {id}",
+      "action": "Action",
+      "entry": "Entry",
+      "entityId": "Entity ID",
+      "prop": "Properties",
+      "oldProp": "Old properties",
+      "newProp": "New properties"
+    },
+    "games": {
+      "segmentsDescription": "If no segments are selected, then access to the games of this producer is not limited",
+      "segmentsInfo": "The producer's games will only be available to users who have the specified segment",
+      "name": "Title",
+      "numberOfGames": "Number of games",
+      "selectedCounter": "Selected {items} out of {total}",
+      "runner": "Runner",
+      "wageringBonusRatioFull": "Bonus wagering percent",
+      "wageringBonusRatio": "Bonus wagering",
+      "gameForBonuses": "Game for bonuses",
+      "gameForBonusesDescription": "Is it possible to play with bonus funds in this game",
+      "availableWithBonuses": "Availability\nwith bonuses",
+      "availableWithBonusesDescription": "Prohibit starting the game if there are funds on the bonus balance",
+      "desktopKey": "Desktop key",
+      "mobileKey": "Mobile key",
+      "playsonMobileGameId": "Playson mobile game ID",
+      "playsonDesktopGameId": "Playson desktop game ID",
+      "pragmaticLiveTableId": "Pragmatic live table ID",
+      "decreaseRatio": "Decrease ratio",
+      "decreaseRatioDescription": "Ratio for reducing the experience gain multiplier",
+      "demoMode": "Demo mode",
+      "IFrame": "Running the game on mobile devices in an iframe",
+      "IFrameDescription": "The game will run in a frame or in a new tab",
+      "aliases": "Aliases",
+      "aliasesPlaceholder": "Add...",
+      "preview": "Preview",
+      "categoryGamePriority": "Category flag priority",
+      "categoryFlag": "Category flag",
+      "allowedDomains": "Allowed domains",
+      "allowedDomainsPlaceholder": "example.com",
+      "allowedDomainsInfo": "The manufacturer and its games will be available on all domains if no domain is specified. The domain must be specified without a protocol. example.com",
+      "addInBulkModal": {
+        "title": "Add games in bulk",
+        "tab": {
+          "addBySlug": "Add by slug",
+          "addByGameId": "Add by game ID"
+        },
+        "addBySlug": {
+          "label": "Slug list",
+          "placeholder": "midasgoldentouch\npoker\nreeloffortune\n\n",
+          "prompt": "List of slug separated by commas or each element on a new line",
+          "error": {
+            "title": "No games found for {value} slug",
+            "description": "Correct the following slug to include games:"
+          }
+        },
+        "addByGameId": {
+        "label": "Game ID list",
+          "placeholder": "673f314e49f2d05b2f01ce79\n673f314e49f2d05b2f01ce22\n673f314e49f2d05b2f01ce15\n\n",
+          "prompt": "List of game ID separated by commas or each element on a new line",
+          "error": {
+            "title": "No games found for {value} game ID",
+            "description": "Correct the following game ID to include games:"
+          }
+        }
+      }
+    },
+    "transactions": {
+      "fee": "Fee",
+      "sumWithFee": "Sum with fee",
+      "payOut": "Pay out",
+      "transactionInfo": "Transaction info",
+      "transactionSum": "Transaction sum",
+      "transactionNumber": "Transaction number",
+      "payoutRequests": "Payout requests",
+      "transactionDate": "Transaction date",
+      "playersPayouts": "Player’s payouts",
+      "inPayments": "In payments",
+      "outPayments": "Out payments",
+      "payoutNotice": "Payout notice",
+      "callback": "Callback",
+      "payoutDecision": "Payout decision",
+      "cancelComment": "Cancel comment",
+      "applyToAllRequests": "Apply to all requests",
+      "cancelPayout": "Cancel payout",
+      "or": "or",
+      "sendForReview": "Send for review",
+      "resendForReview": "Resend for review",
+      "onReview": "On review",
+      "since": "since",
+      "failedReview": "Failed the review",
+      "passedReview": "Passed the review",
+      "modal": {
+        "title": "Make a payout"
+      },
+      "statuses": {
+        "REASON_NOT_SPECIFIED": "Reason not specified",
+        "USER_NOT_VERIFIED": "User not verified",
+        "WITHDRAWAL_ERROR": "No deposit from the specified payment method",
+        "TECHNICAL_REASON": "An error has occurred. Please create a request again",
+        "TECHNICAL_REASON_REJECT": "Payment is canceled due to PS limits",
+        "PAYMENT_METHOD_NOT_VERIFIED": "Payment method not verified",
+        "FULL_KYS": "Full KYC",
+        "ADDITIONAL_DOCUMENTS_PAYMENT_METHOD": "Additional documents: payment method",
+        "FULL_KYS_AND_EMAIL": "Full KYC and email",
+        "CONFIRM_EMAIL": "Confirm email",
+        "ADDITIONAL_DOCUMENTS_ADDRESS": "Additional documents: address",
+        "ADDITIONAL_DOCUMENTS_IDENTITY": "Additional documents: identity",
+        "ADDITIONAL_DOCUMENTS_ADDRESS_AND_PAYMENT_METHOD": "Additional documents: address and payment method",
+        "ADDITIONAL_DOCUMENTS_IDENTITY_AND_PAYMENT_METHOD": "Additional documents: identity and payment method",
+        "ADDITIONAL_DOCUMENTS_ADDRESS_AND_IDENTITY": "Additional documents: address and identity",
+        "ADDITIONAL_DOCUMENTS_ADDRESS_AND_EMAIL": "Additional documents: address and email",
+        "ADDITIONAL_DOCUMENTS_IDENTITY_AND_EMAIL": "Additional documents: identity and email",
+        "ADDITIONAL_DOCUMENTS_PAYMENT_METHOD_AND_EMAIL": "Additional documents: payment method and email",
+        "ADDITIONAL_DOCUMENTS_ADDRESS_AND_PAYMENT_METHOD_AND_EMAIL": "Additional documents: address, payment method, and email",
+        "ADDITIONAL_DOCUMENTS_IDENTITY_AND_PAYMENT_METHOD_AND_EMAIL": "Additional documents: identity, payment method, and email",
+        "ADDITIONAL_DOCUMENTS_ADDRESS_AND_EMAIL_AND_IDENTITY": "Additional documents: address and identity, and email",
+        "RECREATE_PAYOUT_TO_CRYPTO": "Reassign withdrawal to crypto",
+        "RECREATE_PAYOUT_TO_FIAT": "Reassign withdrawal to fiat",
+        "INVALID_PAYMENT_METHOD_DETAILS": "Incorrect data for the payment method",
+        "WITHDRAWAL_FROM_NO_DEPOSIT_BONUS": "Withdrawal from a no-deposit bonus",
+        "USER_HAS_MULTIPLE_ACCOUNT": "Multi-account"
+      }
+    },
+    "payouts": {
+      "playerPayoutsCount": "Unique Payouts",
+      "payoutsList": "List of Payouts",
+      "payoutsRules": "Payouts rules",
+      "cohorts": "Cohorts",
+      "dailyLimitTooltip": "Daily limit:",
+      "weeklyLimitTooltip": "Weekly limit:",
+      "sendToManual": "Send to manual",
+      "delayedTo": "Delayed to {date}",
+      "timelockTo": "Timelock to {date}",
+      "searchPlaceholder": "Search by player ID",
+      "playerIDOrTransactionID": "Search by ID or player ID",
+      "status": "Status",
+      "condition": "Condition",
+      "recheckedByBot": "Rechecked by bot",
+      "withholdPayout": "Withhold payout",
+      "removeWithholding": "Remove withholding",
+      "withhold": "Withhold",
+      "customPeriod": "Custom period",
+      "period": "Period",
+      "removeModal": {
+        "title": "Remove withholding",
+        "description": "Are you sure you want to remove withholding from the payout?"
+      },
+      "periodOptions": {
+        "oneHour": "1 hour",
+        "oneAndHalf": "1.5 hours",
+        "threeHours": "3 hours",
+        "sixHours": "6 hours",
+        "twelveHours": "12 hours",
+        "twentyFourHours": "24 hours",
+        "custom": "Custom"
+      },
+      "statusFilters": {
+        "manual": "Manual",
+        "bot": "Bot",
+        "checkWinnings": "On check winnings",
+        "verification": "Payout On Verification"
+      },
+      "resultFilters": {
+        "totalRequests": "Total requests",
+        "forbiddenRequests": "Forbidden requests",
+        "warningRequests": "Warning requests",
+        "skipRequests": "Skip requests",
+        "uniquePlayers": "Unique players",
+        "totalPayout": "Total payout",
+        "maxPlayersPayout": "Max Player’s Payout"
+      },
+      "statuses": {
+        "rejectedFromPaybot": "Rejected from paybot list",
+        "onVerification": "Payout On Verification",
+        "onCheckWinnings": "On check winnings from {date}",
+        "winCheckSuccessful": "Win check successful",
+        "winCheckFailed": "Win check failed",
+        "delayedByCohortTo": "Delayed by cohort to {date}",
+        "timelockByCohortTo": "Timelocked by cohort to {date}",
+        "onHold": "Payout on hold to {date}"
+      }
+    },
+    "payoutsRulesSettings": {
+      "project": "Project",
+      "botActivation": "Bot activation",
+      "autoPaymentDelayRange": "Bot delay",
+      "botDelay": "Bot delay",
+      "payoutsTimelock": "Timelock",
+      "verificationRequiredText": "Notification",
+      "setRules": "Set rules",
+      "showRules": "Show rules",
+      "hoursForPayoutVerification": "Hours for verification",
+      "rule": "Rule",
+      "testResult": {
+        "colPassed": "Rule pass",
+        "expression": "Rule",
+        "passed": "Passed",
+        "action": "Check Result",
+        "forbidden": {
+          "true": "Forbidden (verification required)",
+          "false": "Forbidden"
+        },
+        "warning": "Warning",
+        "failed": "Failed",
+        "timeLock":"TimeLock",
+        "decision":"Decision",
+        "comment":"Comment",
+        "botDecision": {
+          "_": "Bot decision",
+          "true": "Payout",
+          "false": "Send to manual list"
+        },
+        "botDelay":"Bot delay",
+        "review": {
+          "_":"Review",
+          "true":"Required",
+          "false":"Not required"
+        },
+        "true": "Enabled",
+        "false": "Disabled",
+        "testFailed": "Test failed",
+        "skip": "Skip"
+      }
+    },
+    "payoutsRulesSettingsTest": {
+      "actions": {
+        "testRules": "Test rules",
+        "testAndSave": "Test and save"
+      }
+    },
+    "promoGifts": {
+      "code": "Code",
+      "type": "Type",
+      "dateFrom": "Setup date",
+      "dateTo": "Till date",
+      "visible": "Visible",
+      "empty": "Will be given to everyone",
+      "gifts": "Gifts",
+      "promoCode": "Promo code / refcode",
+      "promoCodePlaceholder": "e.g wan_1f",
+      "promoCodeTip": "If field is empty, the gifts will be given to all registered users without a partner code",
+      "typeOptions": {
+        "promoCode": "Promo code",
+        "partnerShip": "Partnership"
+      },
+      "invalidTillDate": "Till date must be later than the start date"
+    },
+    "payoutsRulesTest": {
+      "country": "country",
+      "placeholder": {
+        "paymentMethodType": "PAYMENT METHOD"
+      },
+      "label": {
+        "paymentMethodType": "paymentMethodType"
+      },
+      "info": {
+        "hasDepFromThisWallet": "Check whether the payment method of the withdrawal request matches the payment method of the deposit. If the details match at least one used method, the command is True.",
+        "documentsVerified": "Check if the Identity toggle switch in the user profile is active.",
+        "paymentSystemVerified": "The number of payment methods (cards) that have been verified and have an active toggle switch.",
+        "phoneVerified": "Check if the Phone toggle switch in the user profile is active.",
+        "emailVerified": "Check if the email is verified via the Email toggle in the user's profile.",
+        "unprofitGamer": "Checking the IN - OUT of the user for Life Time:\n\nif negative, the outcome is True,\nif positive or equal to 0, it is False.",
+        "unprofitGamer7Days": "Checking the IN - OUT of the user for the last 7 days:\n\nIf negative, the outcome is True,\nif positive or equal to 0, it is False.",
+        "isMultiacc": "True — if the user has unblocked multiple accounts.",
+        "hasPayoutsOnReview": "True - If the user has at least one request on review.",
+        "isFirstPayout": "True - If this is the user's first payout, unsuccessful requests are not counted.",
+        "isAutoPaymentEnabled": "Check if automatic payout is enabled in the user's profile.",
+        "isPotentialCrossCurrencyTypePayout": "It is set to true if there were deposits in fiat money and an attempt to withdraw to crypto or vice versa. Deposits for the last 30 days are checked. There is a certain specificity while the list of fiat and crypto methods is configured by the hard code. When adding a new method for payments, you need to add it to the corresponding list through a development task. Example: 'inpay','interac','pix','paydo'.",
+        "verifiedWalletsCount": "The number of confirmed payment methods in the user's profile whereby the deposit was made.",
+        "suspended": "The user account has been temporarily suspended, check the restriction details.",
+        "trustedWalletsCount": "The number of payment methods (wallets) that do not require verification. It is configured using methods in AntiFraud-Payments Methods.",
+        "walletsCount": "The number of payment methods in the user's profile whereby the deposit was made.",
+        "transactionSum": "The amount of the current transaction in the account currency.",
+        "transactionSumUsd": "The amount of the current transaction in USD is converted at the current exchange rate.",
+        "waitingTransactionSum": "The amount of transactions in the waiting status (confirmed by the financial manager but have not received the final status from the payment system) in the account currency.",
+        "waitingTransactionSumUsd": "The amount of transactions in the waiting status (confirmed by the financial manager but have not received the final status from the payment system) in USD.",
+        "currentHour": "The current hour, according to the LR UTC admin panel.",
+        "botAlreadyPayedPerTime": "Number of withdrawal requests paid by bot per period $range - number of withdrawal requests paid by bot per period $range",
+        "payedToday": "The sum of successful clients' withdrawals (OUT) + the sum of withdrawals in the Waiting status made for the current day from 00:00 to 00:00 of the next day according to the admin panel time.",
+        "payedThisWeek": "The sum of successful clients' withdrawals (OUT) + the sum of withdrawals in the Waiting status for the current calendar week from Monday to Sunday.",
+        "payedThisMonth": "The sum of successful client withdrawals (OUT) + the sum of withdrawals in the Waiting status for the current calendar month.",
+        "playerDailyLimit": "The daily withdrawal limit set in the client's profile.",
+        "playerWeeklyLimit": "The weekly withdrawal limit set in the client's profile.",
+        "playerMonthlyLimit": "The monthly withdrawal limit set in the client's profile.",
+        "cohortDailyLimit": "The daily limit, according to the withdrawal cohort, set in the Cohort Settings.",
+        "cohortWeeklyLimit": "The weekly limit, according to the withdrawal cohort, set in the Cohort Settings.",
+        "cohortMonthlyLimit": "The monthly limit, according to the withdrawal cohort, set in the Cohort Settings.",
+        "LTIN": "The amount of successful deposits (IN) made by the client for Life Time stated in the account currency. When calculating, conversion from USD is performed. Therefore, due to exchange rate movements, there may be inaccuracies in the calculation. This is not a bug and is accepted as an allowed deviation.",
+        "LTOUT": "The amount of successful withdrawals (OUT) made by the client for Life Time stated in the account currency. When calculating, conversion from USD is performed. Therefore, due to exchange rate movements, there may be inaccuracies in the calculation. This is not a bug and is accepted as an allowed deviation.",
+        "LTINUsd": "The sum of the client's successful deposits (IN) for Life Time in USD.",
+        "LTOUTUsd": "The sum of the client's successful withdrawals (OUT) for Life Time in USD.",
+        "winback": "The value of a user's winback.",
+        "initialWinback": "The value of the user's winback before the last deposit was made.",
+        "cohortId": "ID number of the cohort the user is in.",
+        "usedNoDepGiftsPerTime": "Function with an additional parameter \"a number of days\". It gives the number of no-deposit gifts used by the client for the last 72 hours.",
+        "vipStatus": "The client's segmentation status is entered in vip status field of the Profile",
+        "currency": "Transaction currency.",
+        "firstDepSumUsd": "The amount of the client's first deposit stated in USD.",
+        "successDepositsCount": "The number of successful client deposits for Life Time.",
+        "successPayoutsCount": "Number of successful withdrawals per client Life Time.",
+        "country": "Country of registration of the player.",
+        "paymentMethodType": "The type of payment method from Marbella settings. CARD, ONLINE BANKING, CRYPTO, VOUCHERS, WALLET."
+      }
+    },
+    "cashbacks": {
+      "name": "Cashback name",
+      "type": "Type",
+      "status": "Status",
+      "cashback": "Cashback",
+      "cashbackInfo": "Percentage of cashback received by the player.",
+      "level": "Level",
+      "requiredDeposit": "Required deposit",
+      "requiredDepositInfo": "Percentage of the calculated cashback amount. The player will be able to receive cashback by making a total deposit of at least the specified amount.",
+      "collectionPeriod": "Collection period",
+      "formula": "Formula for cashback calculating: CB = ( Dp - Be - Ou - Wr ) * k%",
+      "recurrent": "Recurrent",
+      "onetime": "Onetime",
+      "wager": "Wager",
+      "wagerInfo": "Multiplier for a gift with cashback",
+      "minSum": "Min sum",
+      "minSumInfo": "The min amount of cashback required for a player to receive it.",
+      "showInPercentage": "Show in percentage",
+      "maxWin": "Max win",
+      "maxWinInfo": "Only amounts without pennies are available for input",
+      "rewardPeriod": "Reward period",
+      "collectedCashback": "Collected cashback",
+      "paidCashbackAmount": "Paid cashback amount",
+      "depositSum": "Deposit sum",
+      "action": {
+        "collect": "Collect",
+        "schedule": "Schedule",
+        "pause": "Pause",
+        "reward": "Reward"
+      }
+    },
+    "featureFlags": {
+      "list": {
+        "name": "name",
+        "segment": "segment"
+      },
+
+      "searchPlaceholder": "Search by Name or ID"
+    },
+    "cohorts": {
+      "list": {
+        "name": "Name",
+        "type": "Type",
+        "payoutLimits": "Payout limits",
+        "timeLock": "Timelock",
+        "botDelay": "Bot delay",
+        "priority": "Priority",
+        "participateCondition": "Participate condition"
+      },
+      "specifiedUsers": "Specified users",
+      "timeLockMin": "{time} min",
+      "botDelayRange": "{from} - {to} min",
+      "searchPlaceholder": "Search by Name or ID"
+    },
+    "vipManagers": {
+      "name": "Name",
+      "publicName": "Public name",
+      "fullName": "Full name",
+      "privateName": "Private name",
+      "gender": "Gender",
+      "telegram": "Telegram",
+      "whatsapp": "Whatsapp",
+      "phoneNumbers": "Phone numbers",
+      "workHours": "Work hours",
+      "daysOfWeek": "Days of week",
+      "startAndEndTime": "Start and end time",
+      "visible": "Visible",
+      "visibleForAll": "Visible for all"
+    },
+    "levels": {
+      "name": "Name",
+      "costXpGambling": "Cost 1XP Gambling",
+      "costXpBetting": "Cost 1XP Betting",
+      "xp": "XP",
+      "amountXp": "Amount of xp to level up",
+      "prizes": "Prizes",
+      "gambling": "Gambling",
+      "betting": "Betting",
+      "content": "Content",
+      "description": "Description",
+      "image": "Image",
+      "cost1XP": "Cost 1XP",
+      "additionalInfo": "Additional info"
+    },
+    "playersDetailed": {
+      "regDate": "Reg date",
+      "authDate": "Auth date",
+      "ipReg": "IP reg",
+      "playerRealBalance": "Player real balance",
+      "email": "Email",
+      "online": "Online",
+      "bonusesOn": "Bonuses on",
+      "isTest": "Is test",
+      "isSuspended": "Suspend",
+      "searchPlaceholder": "Search by ID, Digitain ID, Nickname, Login, Phone and Email",
+      "chosenCountry": "Chosen country",
+      "country": "Country"
+    },
+    "templates": {
+      "id": "ID",
+      "types": "Types",
+      "status": "Status",
+      "order": "Order",
+      "name": "Name",
+      "templateName": "Template name",
+      "prizeFundDescription": "Prize pool (description)",
+      "slug": "Slug",
+      "description": "Description",
+      "rules": "Rules",
+      "image": "Image",
+      "updated": "Updated",
+      "archive": "Archive",
+      "sortOrder": "Sort order",
+      "tagsDescription": "If nothing selected all are applied",
+      "useGradient": "Use gradient",
+      "backgroundColor": "Background color",
+      "backgroundColorGrad": "Gradient options",
+      "generationSettings": "Generation settings",
+      "stagesInPeriod": "Stages in the period",
+      "startDay": "Start day",
+      "endDay": "End day",
+      "startTime": "Start time",
+      "endTime": "End time",
+      "dayOfWeek": "Day of the week",
+      "winSettings": "Win settings",
+      "timeToDisplay": "Time to display",
+      "prizePool": "Prize pool",
+      "listOfGames": "List of games",
+      "accessTabTitle": "Access",
+      "giftTabTitle": "Gift",
+      "content": "Content",
+      "endTimeValidationError": "The end time must be greater than the start time",
+      "gameTypes": {
+        "_": "Game types",
+        "casino": "Casino",
+        "live": "Live"
+      },
+      "accessTab": {
+        "titleAccess": "Access",
+        "titleParticipationMechanics": "Participation mechanics",
+        "titleBets": "Bets"
+      },
+      "giftTab": {
+        "addGift": "Add gift",
+        "add": "Add",
+        "giftLabel": "Gift",
+        "placeLabel": "place",
+        "copyId": "Copy ID",
+        "prizeCopy": "Make a copy",
+        "prizeRemove": "Remove",
+        "modalRemoveTitle": "Remove gift",
+        "maximizeAll": "Maximize All",
+        "minimizeAll": "Minimize All",
+        "modalRemoveDescription": "Are you sure you want to remove the gift?",
+        "emptyPrizes": {
+          "title": "There are no gifts",
+          "description": "Click below to add gifts"
+        }
+      },
+      "access": {
+        "_": "Access",
+        "open": "Open",
+        "close": "Closed",
+        "public": "Visible for all",
+        "securityMode": "Type",
+        "grant": "Qualification",
+        "minBet": "Min bet",
+        "maxBet": "Max bet",
+        "sumFrom": "Min deposit",
+        "sumTo": "Max deposit",
+        "immediate": "Immediate",
+        "rounds": "Rounds",
+        "depositPeriod": "Deposit period",
+        "byRound": "By round",
+        "partnerCode": "Partner code",
+        "maxRounds": "Max rounds",
+        "vipStatus": "VIP status",
+        "participationMechanics": {
+          "_": "Participation mechanics",
+          "byUsers": "By users",
+          "byLevel": "By level",
+          "byPartnerCode": "By partner code",
+          "byVIPStatus": "By VIP status",
+          "byDepositByPeriod": "By deposit by period",
+          "byDepositByLT": "By deposit by LT",
+          "validationMessage": "At least one option must be selected",
+          "requiredLabel": "Available mechanics"
+        }
+      },
+      "type": {
+        "_": "Type",
+        "TemplateType": "One-time",
+        "DailyType": "Daily",
+        "WeekDailyType": "Weekly"
+      },
+      "restriction": {
+        "_": "Restriction",
+        "list": "Restrictions",
+        "BotVoter": "With bots",
+        "UserVoter": "By users",
+        "PartnerVoter": "By partner code",
+        "LevelVoter": "By level",
+        "DepositLtVoter": "By deposit by LT",
+        "DepositVoter": "By deposits by period",
+        "UserStatusVoter": "By VIP status"
+      },
+      "qualification": {
+        "_": "Qualification",
+        "BaseStrategy": "At once",
+        "ByRoundsStrategy": "By rounds"
+      },
+      "winMechanics": {
+        "_": "Win mechanics",
+        "BetStrategy": "By bet sum",
+        "WinStrategy": "By amount of winnings",
+        "BetWinStrategy": "By amount of bets winnings",
+        "RoundsStrategy": "By number of rounds",
+        "WinBetStrategy": "By amount of winnings bets",
+        "WinReactiveStrategy": "Cumulative by victories"
+      },
+      "tournamentType": {
+        "TemplateType": "One-time tournament",
+        "DailyType": "Daily tournament",
+        "WeekDailyType": "Weekly tournament"
+      },
+      "maxRound": "Max round",
+      "bets": "Bets",
+      "resultsAccuracy": "Results accuracy",
+      "games": "Games"
+    },
+    "tournaments": {
+      "id": "ID",
+      "types": "Types",
+      "status": "Status",
+      "order": "Order",
+      "name": "Name",
+      "slug": "Slug",
+      "description": "Description",
+      "period": "Period",
+      "rule": "Rule",
+      "image": "Image",
+      "updated": "Updated",
+      "archive": "Archive",
+      "winners": {
+        "place": "Place",
+        "score": "Score",
+        "player": "Player",
+        "gift": "Gift",
+        "emptyText": "There are no winners"
+      },
+      "participants": {
+        "_": "Participant",
+        "score": "Score",
+        "name": "Name",
+        "rounds": "Rounds",
+        "bets": "Bets",
+        "wins": "Wins",
+        "addParticipant": "Add participant",
+        "editParticipant": "Edit participant",
+        "currentTotal": "Current total"
+      },
+      "logs": {
+        "date": "Date & Time",
+        "event": "Event",
+        "message": "Message",
+        "emptyText": "There are no logging data"
+      }
+    },
+    "actions": {
+      "_": "Actions",
+      "currencies": "Currencies",
+      "status": "Status",
+      "name": "Name",
+      "totalBalance": "Total Balance",
+      "form": {
+        "active": "Active",
+        "name": "Name",
+        "shortName": "Short name",
+        "description": "Description",
+        "publicName": "Name for player",
+        "example": {
+          "label": "{'Example: {0} exchanges|{1} exchange|{2} exchanges, where:'}",
+          "line1": "{'{0} exchanges - the form used for all numbers ending in 0, 5, 6, 7, 8, 9 and numbers in the second dozen (i.e., 20-29);'}",
+          "line2": "{'{1} exchanges - the form used for all numbers ending in 1, except for those ending in 11;'}",
+          "line3": "{'{2} exchanges - the form used for all numbers ending in 2, 3, 4, except for numbers in the second dozen (i.e., 22-24).'}"
+        },
+        "operation": "Operation",
+        "increase": "Add",
+        "decrease": "Subtract",
+        "amount": "Amount",
+        "comment": "Comment",
+        "reason": "Reason",
+        "data": "Data",
+        "realBalance": "Real balance",
+        "date&time": "Date & time",
+        "before": "Before",
+        "sum": "Amount",
+        "after": "After"
+      },
+      "card": {
+        "login": "Login",
+        "realBalance": "Real balance",
+        "editBalance": "Edit balance",
+        "history": "History"
+      }
+    },
+    "miles": {
+      "status": "Status",
+      "name": "Name",
+      "slug": "Slug",
+      "setupDate": "Setup date",
+      "tillDate": "Till date",
+      "mobileMenuTitle": "Mobile menu title",
+      "order": "Order",
+      "useButtonParticipate": "Use button “Participate”",
+      "visibleForAll": "Visible for all",
+      "additionalInfo": "Additional info",
+      "endDateValidationError": "The end date must be greater than the start date",
+      "tags": "Tags",
+      "tagsDescription": "If no tags are selected, then all tags are supported",
+      "gamesData": "Games data",
+      "gamesDataDescription": "If no Game data are selected, then all data are supported",
+      "vipStatuses": "VIP statuses",
+      "achievements": "Achievements",
+      "vipStatusesDescription": "If no VIP status are selected, then all statuses are supported",
+      "currency": "Currency",
+      "cost1XP": "Cost 1XP",
+      "notifications": "Notifications",
+      "firstPrize": "First prize",
+      "nextPrize": "Next prize",
+      "receivedPrize": "Received prize",
+      "accumulatedPoints": "Accumulated points",
+      "message": "Message",
+      "content": "Content",
+      "rules": "Rules",
+      "steps": "Steps",
+      "prizePool": "Prize pool",
+      "images": "Images",
+      "gifts": "Gifts",
+      "exchangeLimitPerUser": "Max exchanges amount",
+      "gift": "Gift",
+      "price": "Accumulated points",
+      "bannerImage": "Banner image",
+      "backgroundImage": "Background image",
+      "backgroundColor": "Background color",
+      "backgroundColorGrad": "Gradient options",
+      "useGradient": "Use gradient",
+      "collectedFirstSumDefaultMessage": "Congratulations! You've received the first %amount% %currency%!",
+      "collectedFirstSumDefaultMessageDescription": "Make sure it contains %amount% and %currency% unchanged, where:",
+      "notEnoughToGiftDefaultMessage": "Only %amount% %currency% left to collect to get %prize_title%. You can do it!",
+      "notEnoughToGiftDefaultMessageDescription": "Make sure it contains %amount%, %currency% and %prize_title% unchanged, where:",
+      "enoughToGiftDefaultMessage": "Yay! %prize_title% is now available to you! Keep on collecting coins and exchanging them for treats!",
+      "enoughToGiftDefaultMessageDescription": "Make sure it contains %prize_title% unchanged, where:",
+      "amountDescription": "%amount% – the amount of action currency",
+      "currencyDescription": "%currency% – the name of action currency",
+      "prizeTitleDescription": "%prize_title% – the gift name",
+      "mechanic": {
+        "_": "Mechanic",
+        "exchange": "Exchange",
+        "lottery": "Lottery"
+      },
+      "prizePoolValidation": "The {currency} field has not correct format",
+      "gameTitleTooltip": "If no Game data are selected, then all data are supported"
+    }
+  },
+  "validations": {
+    "ActionsCurrencies_publicName_REGEX_FAILED_ERROR": "{'The value must match the example: {0} miles|{1} mile|{2} miles'}",
+    "actions_amount_TOO_LOW_ERROR": "This value should be positive",
+    "Banners_type_IS_BLANK_ERROR": "The field must not be empty",
+    "Banners_slug_ALREADY_EXISTS": "A banner with this slug already exists",
+    "StaticPages_slug_ALREADY_EXISTS": "A static page with this slug already exists",
+    "StaticPages_title_ALREADY_EXISTS": "A static page with this title already exists",
+    "Static_name_ALREADY_EXISTS": "A static page with this name already exists",
+    "Games_slug_ALREADY_EXISTS": "A game with this slug already exists",
+    "Games_desktopKey_ALREADY_EXISTS": "A game with this desktop key already exists",
+    "Games_mobileKey_ALREADY_EXISTS": "A game with this mobile key already exists",
+    "Games_runner_GAME_RUNNER_UNKNOWN": "The field must not be empty",
+    "GamesCategories_slug_ALREADY_EXISTS": "An entity with this slug already exists",
+    "GamesProducers_slug_ALREADY_EXISTS": "An entity with this slug already exists",
+    "Projects_name_ALREADY_EXISTS": "Project with this name already exists",
+    "Projects_alias_NOT_UNIQUE": "Project with this alias already exists",
+    "NeocoreGroups_name_ALREADY_EXISTS": "There is already a group with this name",
+    "Games_slug_REGEX_FAILED_ERROR": "Invalid slug format",
+    "Projects_publicName_REGEX_FAILED_ERROR": "This value is not valid.",
+    "Cohort_participateCondition_EXPRESSION_SYNTAX_ERROR": "Expression language syntax error",
+    "Users_userName_ALREADY_EXISTS": "A user with this login is already exists",
+    "NeocoreUsers_userName_ALREADY_EXISTS": "A user with this login is already exists",
+    "AlaroGift-SpinTemplates_vendorCode_REGEX_FAILED_ERROR": "This Vendor code is not valid",
+    "Cashbacks_slug_REGEX_FAILED_ERROR": "Invalid cashback slug format",
+    "Cashbacks_slug_ALREADY_EXISTS": "Cashback with this slug already exists",
+    "feature-Flags_name_ALREADY_EXISTS": "Feature flag with this name already exists",
+    "Cohort_playersId_EXPRESSION_FAILED_ERROR": "The Users field is required",
+    "Cohort_type_CANNOT_BE_CHANGED": "Type cannot be changed",
+    "Vip-Manager_phone_short_code": "Invalid phone number",
+    "players_email_USER_WITH_THIS_EMAIL_ALREADY_EXIST": "The email is already used by another player",
+    "Vip-Manager_schedule":{
+      "visitingDays": {
+        "startDay_EXPRESSION_FAILED_ERROR": "The value start day should be equal or less than end day"
+      }
+    },
+    "Vip-Manager_privateName_Private name already exists": "Vip manager with this full name already exists",
+    "Payouts-RulesSettings_items": {
+      "expression_EXPRESSION_SYNTAX_ERROR":"Expression language syntax error"
+    },
+    "Payouts-RulesSettings_rules": {
+      "expression_EXPRESSION_SYNTAX_ERROR":"Expression language syntax error",
+      "expression_IS_BLANK_ERROR":"The field must not be empty"
+    },
+    "TournamentsPhase_grant_VALIDATE_ACTIVE_PHASE_ERROR": "Cannot change property, if tournament phase is active",
+    "TournamentsPhase_mechanicsOfVictory_VALIDATE_ACTIVE_PHASE_ERROR": "Cannot change property, if tournament phase is active",
+    "Tournaments_securityMode_VALIDATE_ACTIVE_PHASE_ERROR": "Cannot change property, if tournament phase is active",
+    "Tournaments_mechanicsOfVictory_VALIDATE_ACTIVE_PHASE_ERROR": "Cannot change property, if tournament phase is active",
+    "TournamentsPhase_securityMode_VALIDATE_ACTIVE_PHASE_ERROR": "Cannot change property, if tournament phase is active",
+    "Tournaments_minBet_INVALID_MIN_SUM": "The min sum must be less than the max",
+    "Tournaments_AccessDepositVoterSumFrom_INVALID_MIN_SUM": "The min sum must be less than the max",
+    "Tournaments_AccessDepositLtVoterSumFrom_INVALID_MIN_SUM": "The min sum must be less than the max",
+    "TournamentsPhase_AccessDepositVoterSumFrom_INVALID_MIN_SUM": "The min sum must be less than the max",
+    "TournamentsPhase_AccessDepositLtVoterSumFrom_INVALID_MIN_SUM": "The min sum must be less than the max",
+    "TournamentsPhase_minBet_INVALID_MIN_SUM": "The min sum must be less than the max",
+    "TournamentsPhase_slug_REGEX_FAILED_ERROR": "Invalid slug format",
+    "Tournaments_slug_REGEX_FAILED_ERROR": "Invalid slug format",
+    "Tournaments_prefix_REGEX_FAILED_ERROR": "Invalid slug format",
+    "Tournaments_slug_ALREADY_EXISTS": "A tournament with this slug already exists",
+    "TournamentsPhase_slug_ALREADY_EXISTS": "A tournament phase with this slug already exists",
+    "Tournaments_maxRounds_TOO_LOW_ERROR": "This value should be positive",
+    "ActionsMiles_slug_REGEX_FAILED_ERROR": "Invalid slug format",
+    "ActionsMiles_slug_ALREADY_EXISTS": "A mile with this slug already exists",
+    "players_phone_USER_WITH_THIS_PHONE_ALREADY_EXIST": "Player with this phone already exists",
+    "Promo-Gifts_code_ALREADY_EXISTS": "This promo code already exists",
+    "Promo-Gifts_code_REGEX_FAILED_ERROR": "The field must contain only lowercase latin letters, numbers and underscore",
+    "NeocoreUsers_email_TOO_LONG_ERROR": "This email is too long",
+    "Gifts_sums_INVALID_ARRAY_VALUES": "All limits values should be more than 0",
+    "Gifts_slug_ALREADY_EXISTS": "A gift with this slug already exists",
+    "Gifts_title_TOO_LONG_ERROR": "The title is too long",
+    "Gifts_slug_TOO_LONG_ERROR": "The slug is too long",
+    "Gifts_slug_REGEX_FAILED_ERROR": "Invalid slug format",
+    "Gifts_gameId_MISSING_DOCUMENTS": "Selected game does not exist",
+    "Gifts_type_UNIQUE_GIFT_BY_TYPE": "Gift with this type already exists",
+    "Gifts_manualBonus_MANUAL_BONUS_GIFT": "This field is already selected for the gift {giftName}",
+    "Gifts_title_REGEX_FAILED_ERROR": "Invalid title format",
+    "Gifts_templateTitle_REGEX_FAILED_ERROR": "Invalid template title format",
+    "Gifts_shortDescription_TOO_LONG_ERROR": "This field is too long",
+    "Gifts_description_TOO_LONG_ERROR": "This field is too long",
+    "Achievements_slug_REGEX_FAILED_ERROR": "Invalid slug format",
+    "Achievements_isAllowedAllGames_EXPRESSION_FAILED_ERROR": "Either isAllowedAllGames must be true or gameIds must contain valid IDs",
+    "Achievements_slug_ALREADY_EXISTS":"This entry already exists in the collection",
+    "Gifts_expired_NOT_IN_RANGE_ERROR": "This value should be between {min} and {max}",
+    "Gifts_autoActivation_MANUAL_BONUS_GIFT": "For a gift that is a manual bonus, auto-activation is prohibited",
+    "promo-CodesCampaign_couponsCount_INVALID_PUBLIC_CODE": "Public promo code must use 1 coupon",
+    "promo-CodesCampaign_period_INVALID_ACTIVE_PUBLIC_COMPANY": "Public promo code is already active for this period"
+  },
+  "toast": {
+    "success": {
+      "userSuccessfullyCreated": "User {name} successfully created",
+      "userSuccessfullyDeleted": "User {name} successfully deleted",
+      "userSuccessfullyDeactivated": "User {name} successfully deactivated",
+      "bannerSuccessfullyUpdated": "Banner successfully updated",
+      "bannerSuccessfullyDeleted": "Banner {name} successfully deleted",
+      "bannerSuccessfullyEnabled": "Banner enabled",
+      "bannerSuccessfullyDisabled": "Banner disabled",
+      "tournamentGenerationEdited": "Generation has been edited",
+      "copied": "Copied",
+      "IDcopied": "ID copied",
+      "/api/v2/actions/currencies/create": "Currency saved successfully",
+      "/api/v2/actions/currencies/update": "Currency saved successfully",
+      "/api/v2/games/categories/create": "Category successfully created",
+      "/api/v2/games/categories/update": "Category successfully updated",
+      "/api/v2/games/categories/delete": "Category successfully deleted",
+      "/api/v2/games/create": "Game successfully created",
+      "/api/v2/games/update": "Game successfully updated",
+      "/api/v2/games/delete": "Game successfully deleted",
+      "/api/v2/cohort/create": "Cohort successfully created",
+      "/api/v2/cohort/update": "Cohort successfully updated",
+      "/api/v2/cohort/delete": "Cohort successfully deleted",
+      "/api/v2/games/update/multiple": "Game statuses updated successfully",
+      "/api/v2/games/delete/multiple": "Games successfully deleted",
+      "/api/v2/projects/create": "Project successfully created",
+      "/api/v2/projects/update": "Project successfully updated",
+      "/api/v2/projects/delete": "Project successfully deleted",
+      "/api/v2/neocore/groups/create": "Group successfully created",
+      "/api/v2/neocore/groups/update": "Group successfully updated",
+      "/api/v2/neocore/groups/delete": "Group successfully deleted",
+      "/api/v2/notifications/web/send": "Notification sent successfully",
+      "/api/v2/notifications/web/update": "Notification message successfully updated",
+      "/api/v2/notifications/web/delete": "Notification successfully deleted",
+      "/api/v2/players/update": "Player successfully updated",
+      "/api/v2/players/managers/vip/update": "Player successfully updated",
+      "/api/v2/players/details/update": "Player details successfully updated",
+      "/api/v2/notes/create": "Note successfully created",
+      "/api/v2/notes/update": "Note successfully updated",
+      "/api/v2/treasury/balances/bonuses/add": "Bonus successfully accrued",
+      "/api/v2/treasury/balances/bonuses/cancel": "Bonus successfully canceled",
+      "/api/v2/players/payments/systems/update": "Payment system successfully updated",
+      "/api/v2/players/settings/payout-limits/update": "Payout limits successfully updated",
+      "/api/v2/treasury/transactions/checks/approve": "Payouts approved",
+      "/api/v2/treasury/transactions/checks/reject": "Payouts rejected",
+      "/api/v2/marbella/cards/delete": "Player card successfully deleted",
+      "/api/v2/players/multiaccounts/update": "Multiaccount successfully updated",
+      "/api/v2/treasury/transactions/reject": "Payout successfully canceled",
+      "/api/v2/treasury/transactions/checks/check": "Payout successfully sent for review",
+      "/api/v2/treasury/transactions/approve": "Payout successfully approved",
+      "/api/v2/treasury/payouts/update/set-manual": "Payout successfully sent to manual",
+      "/api/v2/gifts/players/prolongation": "The gift has been successfully extended",
+      "/api/v2/cashbacks/create": "The cashback successfully created",
+      "/api/v2/cashbacks/update": "The cashback successfully updated",
+      "/api/v2/cashbacks/delete": "The cashback successfully deleted",
+      "/api/v2/cashbacks/transitions/un-pause": "The cashback successfully collected",
+      "/api/v2/cashbacks/transitions/pause": "The cashback successfully paused",
+      "/api/v2/cashbacks/transitions/plan": "The cashback successfully scheduled",
+      "/api/v2/cashbacks/transitions/reward": "The cashback successfully rewarded",
+      "/api/v2/treasury/payment-systems/whitelist/create": "The payment systems successfully created",
+      "/api/v2/treasury/payment-systems/whitelist/update": "The payment systems successfully updated",
+      "/api/v2/treasury/payment-systems/whitelist/delete": "The payment systems successfully deleted",
+      "/api/v2/vip-manager/create": "The vip manager successfully created",
+      "/api/v2/vip-manager/update": "The vip manager successfully updated",
+      "/api/v2/vip-manager/delete": "The vip manager successfully deleted",
+      "/api/v2/limits/disable": "Limit successfully canceled",
+      "/api/v2/limits/update": "Limit successfully edited",
+      "filtersSavedByDefault": "Filters saved by default",
+      "/api/v2/payouts-rules/settings/test": "Rules settings successfully tested",
+      "/api/v2/payouts-rules/settings/update": "Rules settings successfully updated",
+      "/api/v2/players/consents/transactional/update": "Players notifications successfully updated",
+      "/api/v2/players/consents/promo/update": "Players notifications successfully updated",
+      "/api/v2/players/winback/update": "Winback successfully edited",
+      "/api/v2/neocore/users/password/update": "Password successfully changed",
+      "/api/v2/users/password/update": "Password successfully changed",
+      "/api/v2/treasury/payouts/update/reject": "Payout successfully canceled",
+      "/api/v2/treasury/payouts/update/approve": "Payout successfully approved",
+      "/api/v2/levels/create": "Level successfully created",
+      "/api/v2/levels/update": "Level successfully updated",
+      "/api/v2/levels/delete": "Level successfully deleted",
+      "/api/v2/achievements/create": "Achievement successfully created",
+      "/api/v2/achievements/update": "Achievement successfully updated",
+      "/api/v2/achievements/delete": "Achievement successfully deleted",
+      "/api/v2/tags/create": "Tag successfully created",
+      "/api/v2/tags/update": "Tag successfully updated",
+      "/api/v2/tags/delete": "Tag successfully deleted",
+      "/api/v2/tournaments/move-to-archive": "The template successfully moved to archive",
+      "/api/v2/tournaments/phase/move-to-archive": "The tournament successfully moved to archive",
+      "/api/v2/tournaments/archiving": "The templates successfully moved to archive",
+      "/api/v2/tournaments/phase/archiving": "The tournaments successfully moved to archive",
+      "/api/v2/tournaments/start-generation": "Generation has been started",
+      "/api/v2/tournaments/stop-generation": "Generation has been stopped",
+      "/api/v2/tournaments/phase/create": "Tournament has been created",
+      "/api/v2/limits/self-exclusion/init": "Self exclusion successfully initiated",
+      "/api/v2/limits/self-exclusion/init/cooling-off": "Self exclusion cooling off successfully initiated",
+      "/api/v2/limits/self-exclusion/cooling-off/activate-force": "Self exclusion cooling off successfully initiated",
+      "/api/v2/limits/self-exclusion/activate": "Self exclusion successfully activated",
+      "/api/v2/limits/self-exclusion/cancel": "Self exclusion successfully canceled",
+      "/api/v2/limits/self-exclusion/cancel/cooling-off": "Self exclusion colling off active successfully canceled",
+      "/api/v2/gifts/players/delete": "Gift successfully removed",
+      "/api/v2/gifts/players/create": "Gift successfully created",
+      "/api/v2/actions/miles/create": "Mile successfully created",
+      "/api/v2/actions/miles/update": "Mile successfully updated",
+      "/api/v2/actions/miles/active/switch": "Mile successfully updated",
+      "/api/v2/gifts/active/switch": "Gift successfully updated",
+      "/api/v2/gifts/update": "Gift successfully updated",
+      "/api/v2/gifts/create": "Gift successfully created",
+      "/api/v2/upload/gifts/mass-distribution": "Gift successfully sent",
+      "/api/v2/achievements/mass-distribution": "Achievement successfully assigned",
+      "/api/v2/promo-codes/campaign/create": "Coupon successfully created",
+      "/api/v2/promo-codes/campaign/update": "Coupon successfully updated",
+      "/api/v2/promo-codes/campaign/property/switch": "Coupon campaign is updated",
+      "/api/v2/promo-codes/campaign/active/switch": "Coupon campaign is updated",
+      "/api/v2/treasury/payouts/update/hold": "Payout successfully put on hold",
+      "/api/v2/treasury/payouts/update/release-hold": "Payout successfully released from hold"
+    },
+    "error": {
+      "ActionsCurrencies_publicName_REGEX_FAILED_ERROR": "{'The value must match the example: {0} miles|{1} mile|{2} miles'}",
+      "actions_amount_TOO_LOW_ERROR": "This value should be positive",
+      "Games_slug_ALREADY_EXISTS": "A game with this slug already exists",
+      "Games_desktopKey_ALREADY_EXISTS": "A game with this desktop key already exists",
+      "Games_mobileKey_ALREADY_EXISTS": "A game with this mobile key already exists",
+      "Games_slug_REGEX_FAILED_ERROR": "Invalid slug format",
+      "AlaroGift-SpinTemplates_vendorCode_REGEX_FAILED_ERROR": "This Vendor code is not valid",
+      "upload_file_INVALID_FILE_FORMAT": "The format of the file is invalid",
+      "Cashbacks_slug_REGEX_FAILED_ERROR": "Invalid cashback slug format",
+      "Cashbacks_slug_ALREADY_EXISTS": "This slug already exists in the cashback",
+      "uneditedCashbackStatus": "Cashbacks in 'Finished' and 'Reward' status cannot be edited",
+      "players_zip_REGEX_FAILED_ERROR": "This postal code is not valid",
+      "Cashbacks_accumulationFrom_CASHBACK_INTERSECT": "Regular events cannot overlap. \n Intersects with the {title} event !",
+      "Cohort_playersId_EXPRESSION_FAILED_ERROR": "The Users field is required",
+      "Cohort_type_CANNOT_BE_CHANGED": "Type cannot be changed",
+      "players_email_USER_WITH_THIS_EMAIL_ALREADY_EXIST": "The email is already used by another player",
+      "players_birthday_INVALID_FORMAT_ERROR": "The entered value has an invalid format",
+      "players_birthday_INVALID_DATE_ERROR": "The entered value has an invalid format date",
+      "limits__INVALID_LIMIT_VALUE": "Invalid limit value",
+      "Vip-Manager_schedule": {
+        "visitingDays": {
+          "startDay_EXPRESSION_FAILED_ERROR": "The value start day should be equal or less than end day"
+        }
+      },
+      "Vip-Manager_phone_short_code": "Invalid phone number",
+      "Vip-Manager_privateName_Private name already exists": "Vip manager with this full name already exists",
+      "gifts_expiredAt_TOO_LOW_ERROR": "The expiration date must be greater than entered one",
+      "Users_userName_ALREADY_EXISTS": "A user with this login is already exists",
+      "NeocoreUsers_userName_ALREADY_EXISTS": "A user with this login is already exists",
+      "validations": {
+        "Payouts-RulesSettings_items": {
+          "expression_EXPRESSION_SYNTAX_ERROR":"Expression language syntax error"
+        },
+        "Payouts-RulesSettings_rules": {
+          "expression_EXPRESSION_SYNTAX_ERROR":"Expression language syntax error",
+          "expression_IS_BLANK_ERROR": "The field must not be empty"
+        }
+      },
+      "upload_file_EMPTY_ERROR": "An empty file is not allowed",
+      "Projects_publicName_REGEX_FAILED_ERROR": "This value is not valid.",
+      "Cohort_participateCondition_EXPRESSION_SYNTAX_ERROR": "Expression language syntax error",
+      "Cohort_playersId_NOT_EXISTS": "The players do not exist",
+      "Tournaments_minBet_INVALID_MIN_SUM": "The min sum must be less than the max",
+      "TournamentsPhase_minBet_INVALID_MIN_SUM": "The min sum must be less than the max",
+      "TournamentsPhase_slug_REGEX_FAILED_ERROR": "Invalid slug format",
+      "Tournaments_slug_REGEX_FAILED_ERROR": "Invalid slug format",
+      "Tournaments_prefix_REGEX_FAILED_ERROR": "Invalid slug format",
+      "Tournaments_slug_ALREADY_EXISTS": "A tournament with this slug already exists",
+      "TournamentsPhase_slug_ALREADY_EXISTS": "A tournament phase with this slug already exists",
+      "Tournaments_maxRounds_TOO_LOW_ERROR": "This value should be positive",
+      "Tournaments_AccessDepositVoterSumFrom_INVALID_MIN_SUM": "The min sum must be less than the max",
+      "Tournaments_AccessDepositLtVoterSumFrom_INVALID_MIN_SUM": "The min sum must be less than the max",
+      "TournamentsPhase_AccessDepositVoterSumFrom_INVALID_MIN_SUM": "The min sum must be less than the max",
+      "TournamentsPhase_AccessDepositLtVoterSumFrom_INVALID_MIN_SUM": "The min sum must be less than the max",
+      "ActionsMiles_slug_REGEX_FAILED_ERROR": "Invalid slug format",
+      "ActionsMiles_slug_ALREADY_EXISTS": "A mile with this slug already exists",
+      "players_phone_USER_WITH_THIS_PHONE_ALREADY_EXIST": "Player with this phone already exists",
+      "Gifts_sums_INVALID_ARRAY_VALUES": "All limits values should be more than 0",
+      "Gifts_slug_ALREADY_EXISTS": "A gift with this slug already exists",
+      "Gifts_title_TOO_LONG_ERROR": "The title is too long",
+      "Gifts_slug_TOO_LONG_ERROR": "The slug is too long",
+      "Gifts_slug_REGEX_FAILED_ERROR": "Invalid slug format",
+      "Gifts_gameId_MISSING_DOCUMENTS": "Selected game does not exist",
+      "Gifts_type_UNIQUE_GIFT_BY_TYPE": "Gift with this type already exists",
+      "Gifts_manualBonus_MANUAL_BONUS_GIFT": "This field is already selected for the gift {giftName}",
+      "NeocoreUsers_email_TOO_LONG_ERROR": "This email is too long",
+      "Promo-Gifts_code_ALREADY_EXISTS": "This promo code already exists",
+      "Gifts_title_REGEX_FAILED_ERROR": "Invalid title format",
+      "Gifts_templateTitle_REGEX_FAILED_ERROR": "Invalid template title format",
+      "Gifts_template_title_ALREADY_EXISTS": "A gift with this template title already exists",
+      "Gifts_shortDescription_TOO_LONG_ERROR": "This field is too long",
+      "Achievements_slug_REGEX_FAILED_ERROR": "Invalid slug format",
+      "Achievements_isAllowedAllGames_EXPRESSION_FAILED_ERROR": "Either isAllowedAllGames must be true or gameIds must contain valid IDs",
+      "Achievements_slug_ALREADY_EXISTS":"This entry already exists in the collection",
+      "Gifts_description_TOO_LONG_ERROR": "This field is too long",
+      "Gifts_expired_NOT_IN_RANGE_ERROR": "This value should be between {min} and {max}",
+      "/api/v2/promo-codes/campaign/property/switch": "Coupon campaign is not updated",
+      "promo-CodesCampaign_couponsCount_INVALID_PUBLIC_CODE": "Public promo code must use 1 coupon",
+      "promo-CodesCampaign_period_INVALID_ACTIVE_PUBLIC_COMPANY": "Public promo code is already active for this period",
+      "Gifts_autoActivation_MANUAL_BONUS_GIFT": "For a gift that is a manual bonus, auto-activation is prohibited",
+      "lockedPosition": "Unable to move the game to the locked position"
+    }
+  },
+  "userStatuses": {
+    "active": "Active",
+    "inactive": "Inactive"
+  },
+  "placeholder": {
+    "select": "Select",
+    "login": "Enter your login",
+    "newPassword": "New password",
+    "password": "Enter your password",
+    "repeatPassword": "Repeat your password",
+    "enterName": "Enter name",
+    "comment": "Comment",
+    "portrait": "Portrait",
+    "payout": "Payout",
+    "loginOrEmail": "Login or email",
+    "fullAccessToAllGroups": "Full access to all groups",
+    "datePicker": "Date picker",
+    "choose": {
+      "_": "Choose",
+      "group": "Choose a group",
+      "project": "Choose a project"
+    },
+    "dropFile": "Drop file here",
+    "search": {
+      "_": "Search",
+      "login": "Search by Login",
+      "loginId": "Search by Login and ID",
+      "loginEmail": "Search by Login and Email",
+      "name": "Search by Name",
+      "nameIdSlug": "Search by Name, ID and Slug",
+      "nameSlug": "Search by Name and Slug",
+      "idAndRequisites": "Search by id and requisites",
+      "walletId": "Search by ID and Wallet ID",
+      "idName": "Search by Name and ID",
+      "code": "Search by Code",
+      "idNameTemplateName": "Search by Name, ID and Template name",
+      "playerID": "Search by player ID",
+      "playerIDOrTransactionID": "Search by ID or player ID",
+      "transactionsList": "Search by login, transaction ID or wallet ID",
+      "adminEntityID": "Search by Admin and Entity ID",
+      "nameOrID": "Search by Name or ID",
+      "tags": "Search by Tags",
+      "gamesData": "Search by Games data",
+      "vipStatuses": "Search by VIP statuses",
+      "achievements": "Search by Achievements",
+      "templateNameId": "Search by Template name and ID",
+      "tournamentId": "Search by Name, ID and Slug",
+      "idSlug": "Search by ID and Slug",
+      "id": "Search by ID"
+    },
+    "filter": {
+      "gameId": "Search by Game ID",
+      "group": "Search by group",
+      "project": "Search by project",
+      "bannerStrategy": "Search by Strategy",
+      "admin": "Search by login",
+      "action": "Choose an action",
+      "entityType": "Search by entity",
+      "gamesType": "Choose a game type",
+      "gamesCategories": "Choose a game category",
+      "gamesProducers": "Choose a game producer",
+      "slug": "Slug",
+      "name": "Name",
+      "gamesRunners": "Choose a runner",
+      "sumFrom": "Sum from",
+      "sumTo": "Sum to",
+      "type": "Choose a type",
+      "subtype": "Choose a subtype",
+      "creator": "Choose a creator",
+      "types": "Search by Types",
+      "status": "Choose a status",
+      "manager": "Choose a manager",
+      "reason": "Choose some reasons",
+      "vipStatuses": "Search by VIP statuses",
+      "regDate": "Reg date",
+      "authDate": "Auth date",
+      "currencies": "Search by Currencies"
+    }
+  },
+  "emptyState": {
+    "giftsList": "There are no gifts",
+    "search": "Nothing found",
+    "bonusOfferModalEmpty": "There are no transactions",
+    "list": "No entries created",
+    "currenciesHistory": "There is no balance history",
+    "listWithBtn": "No entries created. It's time to do it",
+    "projects": "No projects created. It's time to do it",
+    "conciergeService": "No recently viewed players",
+    "supportService": "No recently viewed players",
+    "banner": "No banners created. It's time to do it",
+    "currencies": "There are no currencies",
+    "currencyCard": "There are no statistics",
+    "group": "No group created. It's time to do it",
+    "user": "No user created. It's time to do it",
+    "notes": "No notes yet",
+    "promoGifts": "There are no promo gifts",
+    "payouts": "No payout has been made yet",
+    "logging": "No logging data",
+    "gamesCategories": "No category of games created. It's time to do it",
+    "gamesProducers": "No game providers created. It's time to do it",
+    "staticPages": "No pages have been created.",
+    "games": "No games created. It's time to do it",
+    "enabledGames": "No games found for your search",
+    "giftSpins": "No gift spin has been created. It's about time to do it.",
+    "giftList": "There are no gifts",
+    "promoCodesCampaign": "There are no coupon campaigns",
+    "limits": "No limits yet",
+    "enabledCategoryGames": "No games added for this category",
+    "enabledStaticPagesGames": "No games added for this page",
+    "users": "No user created. It's time to do it",
+    "transactions": "No transaction has been made yet",
+    "playersTransactions": "This player has no transactions yet",
+    "playersTransactionsModal": "There are no comments",
+    "playersNotifications": "This player has no notifications yet",
+    "paymentSystems": "This player has no payment systems",
+    "bonuses": "No bonuses",
+    "cashbacks": "No cashback created. It's time to do it",
+    "cashbacksStatistic": "No cashbacks statistic yet",
+    "gifts": "No gifts",
+    "history": "No history yet",
+    "sms": "This player has no sms yet",
+    "savedCards": "No cards saved yet",
+    "taskUploadManagerHistory": "No upload managers history",
+    "featureFlags": "No flags created. It's time to do it",
+    "vipManagers": "No VIP managers yet",
+    "levels": "There are no levels",
+    "participants": "There are no participants",
+    "cohorts": "No cohorts yet",
+    "paymentsSystem": "No payment system added",
+    "rulesPayoutsSettingsText": "No rules added. Read more about",
+    "rulesPayoutsSettingsTextLink": "expression language syntax",
+    "selfExclusionsText": "There is no self exclusion yet",
+    "playersDetailed": "There are no players",
+    "comment": "There are no comments",
+    "portrait": "There are no portraits",
+    "payout": "There are no payouts",
+    "templates": "There are no templates",
+    "tournaments": "There are no tournaments",
+    "tags": "There are no tags",
+    "miles": "There are no miles",
+    "achievements": "There are no achievements"
+  },
+  "permission": {
+    "backoffice-actions-currencies": "Currencies",
+    "backoffice-actions-miles": "Miles",
+    "backoffice-neocore-users": "Administrators",
+    "backoffice-neocore-groups": "Groups",
+    "backoffice-projects": "Projects",
+    "backoffice-banners": "Banners",
+    "section-concierge-service": "Concierge service",
+    "section-support-service": "Support service",
+    "backoffice-player-contacts-email": "Mail",
+    "backoffice-player-contacts-phone": "Phone",
+    "api-sms-send": "Sending SMS",
+    "api-sms-log": "SMS send history",
+    "backoffice-logaction": "Logging",
+    "backoffice-payouts-toggle-bot": "Bot Activation",
+    "backoffice-games-categories": "Main section",
+    "backoffice-games-categories-seo": "SEO section and localization",
+    "backoffice-games-categories-report": "Data Export",
+    "backoffice-payment-balanceslog-report": "Balance History Export",
+    "backoffice-games": "Main section",
+    "backoffice-games-seo": "SEO section and localization",
+    "backoffice-games-report": "Data Export",
+    "backoffice-games-producers": "Main section",
+    "backoffice-games-producers-seo": "SEO section and localization",
+    "backoffice-games-producers-report": "Data Export",
+    "backoffice-gifts": "List of gifts",
+    "backoffice-static-pages": "Main section",
+    "backoffice-static-pages-seo": "SEO section and localization",
+    "backoffice-static-pages-report": "Data Export",
+    "field-player-main": "Main inform",
+    "field-player-status": "Vip status",
+    "field-player-isblocked": "Account blocking",
+    "field-player-verification": "Verification",
+    "field-player-manager": "Manager",
+    "field-player-autopayment": "Automatic payouts",
+    "backoffice-notes": "Notes",
+    "backoffice-notifications-sms": "SMS messages",
+    "backoffice-notifications-web": "Notifications",
+    "field-read-balance": "Balance",
+    "backoffice-real-balance-update": "Update real balance",
+    "backoffice-player-payment-system": "Payments systems",
+    "marbella-cards": "Saved cards",
+    "backoffice-payment-dailylimits": "Payout limits",
+    "backoffice-transactions": "Transactions",
+    "backoffice-transactions-players": "Transactions",
+    "backoffice-players-bonus": "Bonus balance",
+    "backoffice-gifts-players": "Gifts",
+    "backoffice-cashbacks-players": "Cashbacks",
+    "backoffice-promo-gifts": "Promo gifts",
+    "backoffice-promo-codes-campaign": "Coupons",
+    "backoffice-payment-balanceslog": "Balance history",
+    "backoffice-betting-history": "Betting history",
+    "backoffice-player-multiaccounts": "Multiaccounts",
+    "backoffice-treasury-transactions-checks": "Payouts on review",
+    "alaro-gift-spin-template": "Gift spins offers",
+    "alaro-gift-spin-template-report": "Gift spins offers data export",
+    "backoffice-payouts": "List of Payouts",
+    "backoffice-payouts-bot-settings": "Payouts rules",
+    "backoffice-cashbacks": "Cashbacks",
+    "backoffice-feature-flags": "Feature flags",
+    "backoffice-tags": "Tags",
+    "backoffice-treasury-payment-systems-whitelist": "Payment access list",
+    "marbella-payment-systems": "Marbella payment systems",
+    "backoffice-cohort": "Cohort",
+    "backoffice-vip-manager": "VIP Managers",
+    "backoffice-logs-player": "Player’s log",
+    "backoffice-limits": "Limits",
+    "players-consents-promo": "Promotional SMS and Emails",
+    "players-consents-transactional": "Transactional SMS and Emails",
+    "backoffice-levels": "Levels",
+    "players-winback": "Edit winback",
+    "players-detailed-list": "Players",
+    "players-detailed-list-report": "Players data export",
+    "backoffice-limits-self-exclusion": "Self exclusion",
+    "backoffice-tournaments": "Templates and tournaments",
+    "backoffice-achievements": "List of achievements",
+    "backoffice-treasury-payouts-update-approve": "Payout approve"
+  },
+  "vCoin": {
+    "fetchingError": "Error fetching vcoins",
+    "type": "type",
+    "amount": "amount of coins",
+    "date": "date",
+    "login": "admin login",
+    "comment": "comment",
+    "commentOptional": "Comment (optional)",
+    "sum": "Sum",
+    "withdrawCoinsMessage": "{value} coins have been withdrawn from the player's balance",
+    "refillCoinsMessage": "{value} coins have been added to the player's balance",
+    "coinManagement": "Coin management",
+    "withdrawCoins": "Withdraw coins",
+    "refillCoins": "Refill coins",
+    "balance": "VCoins balance",
+    "transactionHistory": "History of transactions with VCoins"
+  },
+  "mainInfo": {
+    "registration": "Registration",
+    "lastLogin": "Last login",
+    "manager": "Manager",
+    "noManager": "No manager",
+    "digitainIDcopied": "DigitainID copied",
+    "writeSomething": "Write something...",
+    "blocked": "Blocked",
+    "suspended": "Suspended",
+    "test": "Test",
+    "addMainComment": "Add Main Comment",
+    "mainCommentUpdated": "Main Comment Updated",
+    "onVerification": "Payout On Verification"
+  },
+  "sms": {
+    "smsMessages": "SMS messages",
+    "sendSMS": "Send SMS",
+    "favoritePhone": "Favorite Phone",
+    "cancel": "Cancel",
+    "send": "Send",
+    "history": "History",
+    "phone": "Phone",
+    "creator": "Creator",
+    "text": "Text",
+    "messageText": "Message",
+    "message": "message"
+  },
+  "uploadImg": {
+    "labelAvatar": "Avatar",
+    "tableCol1Name": "URL",
+    "tableCol2Name": "Image",
+    "modalLabel": {
+      "project": "Are you sure you want to remove the project icon?",
+      "banners": "Are you sure you want to delete the image?",
+      "templates": "Are you sure you want to delete the image?"
+    },
+    "modalTitle": {
+      "project": "Delete icon",
+      "banners": "Image Removal",
+      "templates": "Image Removal"
+    }
+  },
+  "filters": {
+    "gameId": "Game ID",
+    "entryId": "Entity ID",
+    "paymentSystem": "Payment system",
+    "giftId": "Gift Id",
+    "giftName": "Gift name",
+    "gameType": "Game type",
+    "gamesCategories": "Game category",
+    "gamesProducers": "Game producer",
+    "dateRangeUsed": "Used date range",
+    "runner": "Runner",
+    "gameForBonuses": "Game for bonuses",
+    "availableWithBonuses": "Availability with bonuses",
+    "hidden": "Is hidden",
+    "initialSumRange": "Initial bonus amount",
+    "winBackSumRange": "Sum at the time of wagering",
+    "realSumRange": "Switched to real balance",
+    "wagerLimitRange": "Win limit",
+    "bettingHistoryIsBonus": "Bonus",
+    "bettingDateCreative": "Bet date",
+    "products": "Products",
+    "online": "Online",
+    "regDate": "Reg date",
+    "authDate": "Auth date",
+    "isTest": "Is test",
+    "isSuspended": "Suspend",
+    "totalCoupons": "Total coupons",
+    "usedCoupons": "Used coupons",
+    "created": "Created",
+    "validPeriodStart": "Valid period from",
+    "validPeriodFinish": "Valid period to",
+    "publicCode": "Is promo code public"
+  },
+  "modal": {
+    "archiveTemplate": {
+      "title": "Archive template",
+      "description": "Are you sure you want to archive the template?"
+    },
+    "multiArchiveTemplate": {
+      "title": "Archive templates",
+      "description": "Are you sure you want to archive selected templates?"
+    },
+    "archiveTournamentPhase": {
+      "title": "Archive tournament",
+      "description": "Are you sure you want to archive the tournament?"
+    },
+    "multiArchiveTournamentPhase": {
+      "title": "Archive tournaments",
+      "description": "Are you sure you want to archive selected tournaments?"
+    },
+    "groupsErrorDelete": {
+      "title": "Can't delete group",
+      "description": "Remove users from the group and try again"
+    },
+    "gameCategoriesDelete": {
+      "title": "Can't delete category",
+      "description": "Remove games from the category and try again"
+    },
+    "gameProducersDelete": {
+      "title": "Can't delete producer",
+      "description": "Remove games from the producer and try again\n"
+    },
+    "addAllGames": {
+      "title": "Add all games",
+      "description": "Are you sure you want to add all games?"
+    },
+    "deleteGame": {
+      "title": "Deleting a game",
+      "description": "Are you sure you want to delete this game?"
+    },
+    "deleteAllGames": {
+      "title": "Deleting games",
+      "description": "Are you sure you want to delete all games?"
+    },
+    "deleteSelectedGames": {
+      "title": "Deleting selected games",
+      "description": "Are you sure you want to delete selected games?"
+    },
+    "removeGamesCategories": {
+      "title": "Remove category",
+      "description": "Are you sure you want to remove the category?"
+    },
+    "removeGamesProducers": {
+      "title": "Remove producer",
+      "description": "Are you sure you want to remove the producer?"
+    },
+    "removeStaticPages": {
+      "title": "Delete Static Page",
+      "description": "Are you sure you want to delete this static page?"
+    },
+    "removeGames": {
+      "title": "Remove game",
+      "description": "Are you sure you want to remove the game?"
+    },
+    "removeNeocoreUsers": {
+      "title": "Remove administrator",
+      "description": "Are you sure you want to remove the administrator?"
+    },
+    "removeNeocoreGroups": {
+      "title": "Remove Group",
+      "description": "Are you sure you want to remove the group?"
+    },
+    "removeWebNotification": {
+      "title": "Remove notification",
+      "description": "Are you sure you want to remove the notification?"
+    },
+    "removeGiftsPlayers": {
+      "title": "Remove gift",
+      "description": "Are you sure you want to remove the gift?"
+    },
+    "removeBanners": {
+      "title": "Remove banner",
+      "description": "Are you sure you want to remove this banner?"
+    },
+    "removeProjects": {
+      "title": "Remove project",
+      "description": "Are you sure you want to remove the project?"
+    },
+    "removeAlaroGift-SpinTemplates": {
+      "title": "Remove gift spin",
+      "description": "Are you sure you want to remove the gift spin?"
+    },
+    "removepromo-CodesCampaign": {
+      "title": "Remove coupon campaign",
+      "description": "Are you sure you want to remove the coupon campaign?"
+    },
+    "removeVip-Manager": {
+      "title": "Remove VIP manager",
+      "description": "Are you sure you want to remove the VIP manager?"
+    },
+    "removeLevels": {
+      "title": "Remove level",
+      "description": "Are you sure you want to remove the level?"
+    },
+    "changePassword": {
+      "title": "Set a new password"
+    },
+    "confirmChangeQuantity": {
+      "title": "Update {title}",
+      "description": "The list of games will be changed: there were {wasQuantity} games, it will be {willBeQuantity}.\nAre you sure you want to apply the changes?",
+      "descriptionOnEmpty": "The game list will be empty. Are you sure you want to apply the changes?",
+      "action": {
+        "save": "Save",
+        "cancel": "Cancel"
+      },
+      "pageTitle": {
+        "category": "category",
+        "producer": "producer",
+        "staticPages": "static pages",
+        "tournament": "tournament",
+        "tournamentPhase": "tournament phase"
+      }
+    },
+    "removeCashbacks": {
+      "title": "Remove cashback",
+      "description": "Are you sure you want to remove the cashback?"
+    },
+    "removefeature-Flags": {
+      "title": "Remove feature flag",
+      "description": "Are you sure you want to remove the feature flag?"
+    },
+    "removeTags": {
+      "title": "Remove tag",
+      "description": "Are you sure you want to remove the tag?"
+    },
+    "removeCohort": {
+      "title": "Remove cohort",
+      "description": "Are you sure you want to remove the cohort?"
+    },
+    "removePaymentsSystems": {
+      "title": "Remove payment system",
+      "description": "Are you sure you want to remove this payment system?"
+    },
+    "generationSettings": {
+      "title": "Generation settings",
+      "stagesInPeriod": "Stages in the period",
+      "startDay": "Start day",
+      "startTime": "Start time",
+      "finishDay": "End day",
+      "finishTime": "End time"
+    },
+    "removeAchievements": {
+      "title": "Remove achievement",
+      "description": "Are you sure you want to remove the achievement?"
+    }
+  }
+}

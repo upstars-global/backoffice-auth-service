@@ -1,0 +1,24 @@
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: {{ include "ingressHostname" . }}
+spec:
+  issuerRef:
+    kind: ClusterIssuer
+    name: letsencrypt-certs
+  secretName: {{ include "ingressHostname" . }}
+  dnsNames:
+    - {{ include "ingressHostname" . }}
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: {{ include "ingressStagingHostname" . }}
+spec:
+  issuerRef:
+    kind: ClusterIssuer
+    name: letsencrypt-certs
+  secretName: {{ include "ingressStagingHostname" . }}
+  dnsNames:
+    - {{ include "ingressStagingHostname" . }}

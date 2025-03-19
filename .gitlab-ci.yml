@@ -1,0 +1,126 @@
+include:
+  - project: common/gitlab-ci-templates
+    file: '/build/common-variables-latest.yaml'
+    ref: master
+  - project: common/gitlab-ci-templates
+    file: '/build/helpers-build-latest.yaml'
+    ref: master
+  - project: common/gitlab-ci-templates
+    file: "/changelog/generate-changelog-latest.yaml"
+    ref: master
+  - project: common/gitlab-ci-templates
+    file: "/publish/publish-to-argocd-latest.yaml"
+    ref: master
+  - project: common/gitlab-ci-templates
+    file: "/rules/common-latest.yaml"
+
+variables:
+  CRANE_TAG: crane-ecr-login_v0.1.6
+  DOCKERFILE_PATH: "./Dockerfile"
+  IMAGE: ${DOCKER_REGISTRY}:${CI_PROJECT_NAME}${IMAGE_POSTFIX}_${CI_COMMIT_REF_SLUG}_${CI_PIPELINE_ID}
+  CRANE_IMAGE: ${SHARED_DOCKER_REGISTRY}:${CRANE_TAG}
+  IMAGE_TAG: "${CI_COMMIT_REF_SLUG}_${CI_PIPELINE_ID}"
+  IMAGE_HASH: ${DOCKER_REGISTRY}:${CI_PROJECT_NAME}${IMAGE_POSTFIX}_${CI_COMMIT_REF_SLUG}_${CI_COMMIT_SHORT_SHA}
+  IMAGE_POSTFIX: ""
+  NO_PUSH_OPT: ""
+  DOCKER_BUILD_CONTEXT: .
+
+.docker-build:
+  stage: docker-build
+  variables:
+    IMAGE_CACHE_TTL: 2190h0m0s # three months
+  image: gcr.io/kaniko-project/executor:debug
+  script:
+    - echo "{\"credHelpers\":{\"$DOCKER_REGISTRY/$CI_PROJECT_NAMESPACE\":\"ecr-login\"}}" > /kaniko/.docker/config.json
+    - /kaniko/executor
+      --cache=true
+      --cache-repo $DOCKER_REGISTRY
+      --cache-ttl $IMAGE_CACHE_TTL
+      --snapshot-mode=redo
+      --use-new-run
+      --dockerfile "${DOCKERFILE_PATH}" ${NO_PUSH_OPT}
+      --destination "${IMAGE}"
+      --destination ${IMAGE_HASH}
+      --context "${DOCKER_BUILD_CONTEXT}"
+      --build-arg CI_SERVER_HOST=${CI_SERVER_HOST}
+      --build-arg CI_JOB_TOKEN=${CI_JOB_TOKEN}
+      --build-arg CI_COMMIT_BRANCH=${CI_COMMIT_BRANCH}
+      --build-arg BUILD_COMMIT_SHA=${CI_COMMIT_SHA}
+      --build-arg IMAGE_TAG=${IMAGE_TAG}
+      --build-arg CI_PIPELINE_ID=${CI_PIPELINE_ID}
+      --build-arg CI_COMMIT_REF_SLUG=${CI_COMMIT_REF_SLUG}
+      --build-arg DOCKER_PUBLIC_REPO=${DOCKER_PUBLIC_REPO}
+      $(if [ -f './gitlab-ci/from_ci_envs.sh' ]; then source ./gitlab-ci/from_ci_envs.sh; fi)
+
+stages:
+  - docker-build
+  - changelog
+  - generate_app_json
+  - publish_to_argo
+
+Check Image Tag:
+  extends: .check_if_tag_exists
+  stage: .pre
+  rules:
+    - !reference [ .exclude_charts_and_mr_only, rules ]
+    - !reference [ .exclude_charts_and_develop_only, rules ]
+    - !reference [ .exclude_charts_and_main_only, rules ]
+
+docker-build:
+  extends:
+    - .before_build_check
+    - .docker-build
+  rules:
+    - !reference [.exclude_charts_and_mr_only, rules]
+    - !reference [.exclude_charts_and_develop_only, rules]
+    - !reference [.exclude_charts_and_main_only, rules]
+
+Generate ARGO JSON development:
+  extends: .generate-app-json-develop
+  stage: generate_app_json
+  variables:
+    PUBLISH_TO_ENV: "development"
+    DESTINATION_NAMESPACE: ${CI_PROJECT_NAME}
+
+Generate ARGO JSON staging:
+  extends: .generate-app-json-main
+  stage: generate_app_json
+  variables:
+    PUBLISH_TO_ENV: "staging"
+    DESTINATION_NAMESPACE: ${CI_PROJECT_NAME}
+    AUTOTESTS_ENABLED: "true"
+    AUTOTESTS_PROJECT: "cardona_staging"
+    AUTOTESTS_PRODUCT: "cardona"
+
+Generate ARGO JSON production:
+  extends: .generate-app-json-main-manual
+  stage: generate_app_json
+  variables:
+    PUBLISH_TO_ENV: "production"
+    DESTINATION_NAMESPACE: ${CI_PROJECT_NAME}
+
+Deploy to develop:
+  stage: publish_to_argo
+  extends: .push-to-argo-repo-develop
+  needs:
+    - Generate ARGO JSON development
+
+Deploy to staging :
+  stage: publish_to_argo
+  extends: .push-to-argo-repo-main
+  needs:
+    - Generate ARGO JSON staging
+
+Deploy to production:
+  stage: publish_to_argo
+  extends: .push-to-argo-repo-main-manual
+  needs:
+    - Generate ARGO JSON production
+
+generate-changelog-with-master:
+  extends: .generate-changelog-with-master
+  stage: generate_app_json
+
+generate-changelog-with-before-sha:
+  extends: .generate-changelog-with-before-sha
+  stage: generate_app_json
