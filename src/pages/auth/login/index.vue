@@ -1,16 +1,17 @@
 <script setup lang="ts">
 import { transformFormData } from 'cardona-core-service/src/helpers'
-import type { LoginForm } from 'cardona-core-service/src/@model/auth'
+import type { ILoginData, LoginForm } from 'cardona-core-service/src/@model/auth'
 import { PageType } from 'cardona-core-service/src/@model/templates/baseSection'
 import BaseSection from 'cardona-core-service/src/components/templates/BaseSection/index.vue'
-import { productsName } from 'cardona-core-service/src/configs/productsName'
 import { VColors, VSizes } from 'cardona-core-service/src/@model/vuetify'
 import { useStore } from 'vuex'
-import AppLogo from 'cardona-core-service/src/components/AppLogo.vue'
-import { productId } from '@productConfig'
-import { useAuthForm } from '@/pages/auth/useAuth'
+import type { IAuthTokens } from 'axios-jwt'
+import { setAuthTokens } from 'axios-jwt'
 
-const router = useRouter()
+import ApiService from 'cardona-core-service/src/services/api'
+import { useAuthForm } from '@/pages/auth/useAuth'
+import { redirectToProject } from '@/helper'
+
 const store = useStore()
 const formRef = ref()
 
@@ -18,25 +19,28 @@ const isLoading = computed(() => {
   return store.getters.isLoadingEndpoint('auth')
 })
 
+const login = async (authData: ILoginData) => {
+  const { data }: { data: IAuthTokens } = await ApiService.request({
+    type: 'App.V2.Auth',
+    data: authData,
+  })
+
+  setAuthTokens(data)
+
+  return data
+}
+
 const onSubmit = async (form: LoginForm) => {
   if (!(await formRef.value?.validate()))
     return
 
-  const transformedForm = transformFormData(form)
+  const transformedForm = transformFormData(form) as ILoginData
 
-  await store.dispatch('authCore/login', transformedForm)
-
-  const products = store.getters.userProducts
-  const isSameProduct = products.find(item => item.id === productId)
-  if (isSameProduct) {
-    await router.push({ name: 'Dashboard' })
+  try {
+    await login(transformedForm)
+    redirectToProject()
   }
-  else {
-    const url = location.origin
-    const hasNeocore = !!products.find(item => item.name === productsName.neocore)
-
-    location.href = hasNeocore ? url : `${url}/${products[0].name}`
-  }
+  catch {}
 }
 </script>
 
@@ -45,12 +49,11 @@ const onSubmit = async (form: LoginForm) => {
     <VRow class="auth-inner mx-auto my-auto">
       <div class="align-self-center v-col-4 mx-auto">
         <VCard class="px-6 py-6 d-flex flex-column">
-          <div class="brand-logo mx-auto">
-            <AppLogo />
+          <div class="pb-4">
+            <h3 class="text-primary text-uppercase text-center">
+              Authorization service
+            </h3>
           </div>
-          <VCardTitle class="mx-auto">
-            {{ $t('page.login.welcomeToAdminPanel') }}
-          </VCardTitle>
           <BaseSection
             ref="formRef"
             :page-type="PageType.Create"
