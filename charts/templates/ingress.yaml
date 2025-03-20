@@ -25,13 +25,22 @@ spec:
     - host: {{ include "ingressHostname" . }}
       http:
         paths:
-          - path: /
+          - path: /auth
             pathType: Prefix
             backend:
               service:
                 name: {{ .Release.Name }}
                 port:
                   name: http
+{{- if .Values.cardonaPanelSercive }}
+          - path: /cardona
+            pathType: Prefix
+            backend:
+              service:
+                name: {{ .Values.cardonaPanelSercive }}
+                port:
+                  name: http
+{{- end }}
 {{- if .Values.alaroPanelSercive }}
           - path: /alaro
             pathType: Prefix

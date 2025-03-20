@@ -1,7 +1,7 @@
 desc:
   env: development
 
-ingressHost: cardona-development
+ingressHost: auth-service-development
 
 serverApiAddr:  luckyroot-development-service.luckyroot.svc.cluster.local
 serverProxyAddr: luckyroot-development-service.luckyroot.svc.cluster.local
@@ -21,6 +21,7 @@ staging:
   serverPortWs: 8080
 
   alaroPanelSercive: "alaro-panel-staging"
+  cardonaPanelSercive: "cardona-panel-staging"
   marbellaPanelSercive: "marbella-panel-staging"
   luckyrootService: luckyroot-staging-service
 
