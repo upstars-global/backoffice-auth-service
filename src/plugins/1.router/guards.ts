@@ -4,7 +4,7 @@ import { redirectToProject } from '@/helper'
 
 export const setupGuards = (router: Router) => {
   router.beforeEach(async (to, _, next) => {
-    const isLoginPage = to.name === 'Login'
+    const isLoginPage = to.name === 'Login' /// TODO remove this variable
     const isLoggedIn = checkIsLoggedIn()
 
     if (isLoggedIn && isLoginPage) {
