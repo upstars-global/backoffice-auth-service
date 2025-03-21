@@ -11,6 +11,7 @@ app.kubernetes.io/part-of: cardona
 
 {{- end -}}
 
+# CHECK Надо ли это для auth service
 {{- define "cardona_labels" -}}
 app.kubernetes.io/component: cardona
 app.kubernetes.io/name: backoffice

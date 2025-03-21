@@ -13,7 +13,7 @@ metadata:
     app.kubernetes.io/component: ingress
     app.kubernetes.io/name: {{ .Release.Name }}
     app.kubernetes.io/brand: cardona
-    app.kubernetes.io/part-of: cardona
+    app.kubernetes.io/part-of: cardona # CHECK Надо ли это для auth service
     app.kubernetes.io/env: {{ .Values.desc.env }}
 spec:
   ingressClassName: {{ .Values.ingress.controller.name | quote }}

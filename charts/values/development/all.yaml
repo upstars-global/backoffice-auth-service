@@ -13,7 +13,7 @@ serviceAccount:
 
 desc:
   project: "backoffice"
-  brand: "cardona"
+  brand: "cardona" # CHECK Надо ли это для auth service
   env: development
 
 ingressHostName: cardona-development.boffice.site
