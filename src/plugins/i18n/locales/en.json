@@ -5,8 +5,10 @@
       "textPage": "Please contact the main administrator for access."
     },
     "login": {
+      "or": "or",
       "welcomeToAdminPanel": "Welcome to admin panel",
-      "inCaseForgotPassword": "If you forgot your password, contact the administrator"
+      "inCaseForgotPassword": "If you forgot your password, contact the administrator",
+      "signInWithGoogle": "Sign in with Google"
     }
   }
 }

@@ -19,9 +19,10 @@
     "@sentry/vue": "^8.41.0",
     "axios": "^1.7.8",
     "axios-jwt": "^4.0.3",
-    "cardona-core-service": "github:upstars-global/cardona-core-service#v3.2.92",
+    "cardona-core-service": "github:upstars-global/cardona-core-service#v3.3.45",
     "lodash": "^4.17.21",
-    "v-code-diff": "^1.13.1"
+    "v-code-diff": "^1.13.1",
+    "vue3-google-login": "^2.0.33"
   },
   "devDependencies": {
     "@antfu/eslint-config-vue": "^0.43.1",
